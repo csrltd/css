@@ -19,10 +19,10 @@
             <div class="topnav">
                     <div class="row container">
                         <div class=" contacts">
-                            <a href=""><i class="fas fa-map-marker-alt"></i><p>816 E. Federal Shawnee, OK 74804</p></a>
-                            <a href="mailto:info@cohesivestaffing.com"><i
+                            <a class="top-bar-location" href=""><i class="fas fa-map-marker-alt"></i><p>816 E. Federal Shawnee, OK 74804</p></a>
+                            <a class="top-bar-email" href="mailto:info@cohesivestaffing.com"><i
                                     class="fa fa-envelope"></i><p>info@cohesivestaffing.com</p></a>
-                            <a href="tel:405.367.4422"><i class="fas fa-phone-alt"></i><p>405.367.4422</p></a>
+                            <a class="top-bar-phone-number" href="tel:405.367.4422"><i class="fas fa-phone-alt"></i><p>405.367.4422</p></a>
                         </div>
         
                         <div class=" social-icons">
@@ -48,11 +48,15 @@
                         </ul>
                     </div>
     
-                    <div class="col">
+                    <div class="col col-btns">
                         <div class="cta-buttons">
                             <a href="" class="faqs">FAQs</a>
                             <a href="" class="faqs"><button class="bnt-white btn-outline">Login</button></a>
                             <a href="" class="faqs"><button class="bnt-white btn-blue">Sign Up</button></a>
+                        </div>
+
+                        <div class="mobile-menu-btn">
+                            <i class="fa fa-bars"></i>
                         </div>
                     </div>
                 </div>
@@ -64,7 +68,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="heading">
+                    <h1 class="heading heading-hero">
                         Quality <span class="span-orange">Professionals</span> Providing Quality <span
                             class="span-blue">Care</span>
                     </h1>
@@ -90,11 +94,11 @@
         <div class="container">
             <div class="row">
                 <div class="col why-img">
-                    <img src="/static/images/why-img.png" alt="">
+                    <img src="https://images.unsplash.com/photo-1606318313647-137d1f3b4d3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvY3RvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="">
                 </div>
                 <div class="col">
                     <h1 class="heading">
-                        Why <span class="orange">Cohesive?</span>
+                        Why <span class="span-orange">Cohesive?</span>
                     </h1>
                     <p>
                         Our staffing service offers clients a unique and personalized serviceapproach because we
@@ -138,13 +142,13 @@
                     </p>
                 </div>
 
-                <div class="col fade-orange">
+                <div class="col fade-orange fade-orange-inverse">
                     <p>
                         Available to work multiple shifts and contract lengths
                     </p>
                 </div>
 
-                <div class="col fade-blue">
+                <div class="col fade-blue fade-blue-reverse">
                     <p>
                         Background checked, drug screened, and credential reviewed
                     </p>
@@ -175,6 +179,10 @@
                         <button class="btn-orange">Join</button>
                     </a>
                 </div>
+
+                <div class="col skills-img">
+                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRvY3RvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -185,47 +193,47 @@
         <div class="container">
             <div class="row">
                 <div class="col process-img">
-                    <img src="/static/images/process-img.png" alt="">
+                    <img src="https://images.unsplash.com/photo-1606318313647-137d1f3b4d3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvY3RvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="">
                 </div>
                 <div class="col">
                     <h1 class="heading">
                         <span class="span-orange">Our</span> Process
-                        <p>
-                            We strive to offer our clients a seamless experience. Our process for ending the perfect
-                            candidates is simple.
-                        </p>
-
-                        <div class="process-cards">
-                            <div class="card">
-                                <div class="card-badge">
-                                    <p>1</p>
-                                </div>
-                                <div class="card-text fade-orange">
-                                    First, we meet to discuss your unique set of healthcare needs.
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-badge">
-                                    <p>2</p>
-                                </div>
-                                <div class="card-text fade-blue">
-                                    Next, we match our highly qualified candidates to your position.
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-badge">
-                                    <p>3</p>
-                                </div>
-                                <div class="card-text fade-blue">
-                                    Finally, we present you with quality candidates.
-                                </div>
-                            </div>
-
-
-                        </div>
                     </h1>
+                    <p>
+                        We strive to offer our clients a seamless experience. Our process for ending the perfect
+                        candidates is simple.
+                    </p>
+
+                    <div class="process-cards">
+                        <div class="card fade-orange">
+                            <div class="card-badge back-orange">
+                                <p>1</p>
+                            </div>
+                            <div class="card-text">
+                                First, we meet to discuss your unique set of healthcare needs.
+                            </div>
+                        </div>
+
+                        <div class="card fade-blue">
+                            <div class="card-badge back-blue">
+                                <p>2</p>
+                            </div>
+                            <div class="card-text">
+                                Next, we match our highly qualified candidates to your position.
+                            </div>
+                        </div>
+
+                        <div class="card fade-blue-reverse">
+                            <div class="card-badge back-blue back-blue-reverse">
+                                <p>3</p>
+                            </div>
+                            <div class="card-text">
+                                Finally, we present you with quality candidates.
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,7 +242,7 @@
     <!--Call to action section-->
 
     <section class="call-to-action">
-        <div class="container">
+        <div class="row container">
             <div class="col title">
                 <h3>Do you want to learn more about how we can help you?
                 </h3>
@@ -247,17 +255,18 @@
                 </p>
             </div>
             <a href="">
-                <button class="blue">Join</button>
+                <button class="bnt-white">Join now</button>
             </a>
         </div>
     </section>
 
     <!--Footer-->
     <footer>
-        <div class="container">
+        <div class="row container">
 
             <!--For employees-->
-            <div class="emplyees">
+            <div class="col emplyees">
+                <h4 class="footer-title">For Employers</h4>
                 <ul class="footer-links">
                     <li class="footer-link"><a href="">Login into your account</a></li>
                     <li class="footer-link"><a href="">Create an Account</a></li>
@@ -270,49 +279,49 @@
             </div>
 
             <!--For employers-->
-            <div class="emplyers">
+            <div class="col emplyers">
+                <h4 class="footer-title">For Employers</h4>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="">Login into your account</a></li>
-                    <li class="footer-link"><a href="">Create an Account</a></li>
+                    <li class="footer-link"><a href="">Employers portal</a></li>
+                    <li class="footer-link"><a href="">Hire an employee</a></li>
                     <li class="footer-link"><a href="">How to find work</a></li>
+                    <li class="footer-link"><a href="">How it works</a></li>
                     <li class="footer-link"><a href="">Direct contact</a></li>
-                    <li class="footer-link"><a href="">Rules and Regurations</a></li>
-                    <li class="footer-link"><a href="">Training resources</a></li>
-                    <li class="footer-link"><a href="">Get hired faster</a></li>
+                    <li class="footer-link"><a href="">Terms and conditions</a></li>
                 </ul>
             </div>
 
             <!--Resources-->
-            <div class="resources">
+            <div class="col resources">
+                <h4 class="footer-title">Resources</h4>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="">Login into your account</a></li>
-                    <li class="footer-link"><a href="">Create an Account</a></li>
-                    <li class="footer-link"><a href="">How to find work</a></li>
-                    <li class="footer-link"><a href="">Direct contact</a></li>
-                    <li class="footer-link"><a href="">Rules and Regurations</a></li>
-                    <li class="footer-link"><a href="">Training resources</a></li>
-                    <li class="footer-link"><a href="">Get hired faster</a></li>
+                    <li class="footer-link"><a href="">Learning  portal</a></li>
+                    <li class="footer-link"><a href="">Help and Support</a></li>
+                    <li class="footer-link"><a href="">Success stories</a></li>
+                    <li class="footer-link"><a href="">Free resume tool</a></li>
+                    <li class="footer-link"><a href="">Trust and safety</a></li>
+                    <li class="footer-link"><a href="">Training materials</a></li>
+                    <li class="footer-link"><a href="">Reading books</a></li>
                 </ul>
             </div>
 
             <!--Company-->
-            <div class="company">
+            <div class="col company">
+                <h4 class="footer-title">Company</h4>
                 <ul class="footer-links">
-                    <li class="footer-link"><a href="">Login into your account</a></li>
-                    <li class="footer-link"><a href="">Create an Account</a></li>
-                    <li class="footer-link"><a href="">How to find work</a></li>
-                    <li class="footer-link"><a href="">Direct contact</a></li>
-                    <li class="footer-link"><a href="">Rules and Regurations</a></li>
-                    <li class="footer-link"><a href="">Training resources</a></li>
-                    <li class="footer-link"><a href="">Get hired faster</a></li>
+                    <li class="footer-link"><a href="">About us</a></li>
+                    <li class="footer-link"><a href="">Leadership</a></li>
+                    <li class="footer-link"><a href="">Careers</a></li>
+                    <li class="footer-link"><a href="">Our impact</a></li>
+                    <li class="footer-link"><a href="">Legal statement</a></li>
                 </ul>
             </div>
 
         </div>
-        <div class="container footer-bottom">
+        <div class="row container footer-bottom">
             <div class="follow">
-                <span>follow us</span>
-                <div class="social-icons">
+                <span>Follow us</span>
+                <div class="social-icons social-icons-footer">
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-linkedin-in"></i></a>

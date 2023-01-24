@@ -17,4 +17,217 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.why {
+  background-color: #FFFAF4;
+  padding: 80px 0;
+}
+.why .container .row .col {
+  width: 50%;
+}
+.why .container .row .why-img img {
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.candidates {
+  padding: 80px 0;
+}
+.candidates .container p {
+  margin-top: 16px;
+}
+.candidates .container .row {
+  margin-top: 32px;
+}
+.candidates .container .row .col {
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.skills .container .row .col {
+  width: 50%;
+}
+.skills .container .row .skills-img img {
+  max-width: 600px;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.process {
+  padding: 80px 0;
+}
+.process .container .row .col {
+  width: 50%;
+}
+.process .container .row .col .process-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.process .container .row .col .process-cards .card {
+  margin-top: 8px;
+  padding: 32px;
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+}
+.process .container .row .col .process-cards .card .card-badge {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+.process .container .row .process-img img {
+  max-width: 600px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.call-to-action .container {
+  background-color: #01455F;
+  padding: 80px;
+  margin-bottom: 80px;
+  color: white;
+  border-radius: 10px;
+}
+.call-to-action .container .title h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #01455F;
+  color: white;
+  padding: 80px;
+}
+footer a {
+  color: white;
+}
+footer .row {
+  align-items: flex-start;
+}
+footer .footer-title {
+  font-size: 18px;
+}
+footer .footer-links {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .footer-links .footer-link a {
+  font-size: 16px;
+  font-weight: lighter;
+}
+footer .footer-bottom {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.459);
+  font-weight: lighter;
+}
+footer .footer-bottom .follow {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+footer .footer-bottom .follow .social-icons a {
+  background-color: #F7941D;
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    background: url("/static/images/hero-img.png");
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.537);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  .hero .container .row .right-img {
+    display: none;
+  }
+  .hero .container .row .col {
+    width: 100%;
+  }
+  .why .container .row {
+    flex-direction: column;
+  }
+  .why .container .row .col {
+    width: 100%;
+  }
+  .candidates .container .row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .candidates .container .row .col {
+    width: 48%;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px;
+  }
+  .skills .container .row {
+    flex-direction: column-reverse;
+  }
+  .skills .container .row .col {
+    width: 100%;
+  }
+  .skills .container .row .skills-img img {
+    height: 250px;
+  }
+  .process .container .row {
+    flex-direction: column;
+  }
+  .process .container .row .col {
+    width: 100%;
+  }
+  .process .container .row .col .process-cards {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .process .container .row .col .process-cards .card {
+    width: 100%;
+  }
+  .process .container .row .process-img {
+    display: none;
+  }
+  .call-to-action {
+    padding: 16px;
+  }
+  .call-to-action .container {
+    padding: 40px;
+  }
+  .call-to-action .row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  footer {
+    padding: 48px 16px;
+  }
+  footer .row {
+    flex-wrap: wrap;
+  }
+  footer .row .col {
+    display: block;
+    width: 40%;
+  }
+  footer .row .col .footer-title {
+    font-size: 16px;
+  }
+  footer .row .col .footer-links .footer-link a {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */

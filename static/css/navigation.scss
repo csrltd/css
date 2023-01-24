@@ -16,6 +16,10 @@ $gap-default: 8px;
 $font-body: 18px;
 $font-heading: 48;
 
+//Break points
+
+$mobile-break-point: 540px;
+
 //Navigation
 
 header {
@@ -37,27 +41,6 @@ header {
                     }
                 }
     
-                .social-icons {
-                    display: flex;
-                    align-items: center;
-                    gap: calc($gap-default *2);
-
-                    a {
-                        background-color: $color-dark;
-                        height: calc($gap-default * 4);
-                        width: calc($gap-default * 4);
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        border-radius: calc($radius-default / 2);
-
-                        i {
-                            color: white;
-                        }
-                    }
-                }
             }
         }
 
@@ -67,14 +50,6 @@ header {
                 gap: calc( $gap-default * 3);
                 .col {
                     flex-direction: row;
-                    .logo {
-                        a {
-                            img {
-                                max-height: 50px;
-                                height: 50px;
-                            }
-                        }
-                    }
     
                     .menu-items, .cta-buttons {
                         display: flex;
@@ -85,3 +60,64 @@ header {
             }
         }
     }
+
+
+    // Top bar responsiveness
+
+        //Mobile 540px
+@media screen and (max-width: 1100px) {
+    header {
+        .topnav {
+            .row {
+                .contacts {
+                    .top-bar-email {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+    //Mobile 540px
+@media screen and (max-width: 700px) {
+    header {
+        .topnav {
+            .row {
+                .contacts {
+                    .top-bar-location, .top-bar-email {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+//Nav bard respinsiveness
+    //Mobile 540px
+    @media screen and (max-width: 1000px) {
+        header {
+            nav {
+                .row {
+                    .col {
+                        .menu-items {
+                            display: none;
+                        }
+
+                        .cta-buttons {
+                            display: none;
+                        }
+
+                        .mobile-menu-btn {
+                            i {
+                                font-size: calc($gap-default* 5);
+                            }
+                        }
+                    } 
+                }
+            }
+        }    
+    }
+
+

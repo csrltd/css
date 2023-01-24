@@ -16,7 +16,7 @@ $gap-default: 8px;
 $font-body: 18px;
 $font-heading: 48;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Mulish:wght@700&display=swap');
 
 //Basic setup
 html {
@@ -63,12 +63,14 @@ button {
     background-color: white;
     color: $color-dark;
     border: 1px solid white;
-    
+
     &:hover {
         background-color: $color-dark;
+        color: white;
 
     }
 }
+
 .btn-blue {
     background-color: $color-dark;
     color: white;
@@ -95,7 +97,8 @@ button {
 .btn-outline {
     background-color: transparent;
     color: $color-dark;
-    border:1px solid $color-dark;
+    border: 1px solid $color-dark;
+
     &:hover {
         background-color: $color-dark;
         color: white;
@@ -126,4 +129,89 @@ button {
 
 .span-blue {
     color: $color-blue;
+}
+
+img {
+    width: 100%;
+}
+
+.fade-orange {
+    background-color: $color-fade-orange;
+}
+.fade-orange-inverse {
+    background-color: $color-fade-orange
+}
+
+.fade-blue {
+    background-color: $color-fade-blue;
+}
+
+.fade-blue-reverse {
+    background-color: $color-fade-blue;
+}
+
+.back-orange {
+    background-color: $color-orange
+}
+
+.back-blue {
+    background-color: $color-blue;
+}
+
+.back-blue-reverse {
+    background-color: $color-blue;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: calc($gap-default *2);
+
+    a {
+        background-color: $color-dark;
+        height: calc($gap-default * 4);
+        width: calc($gap-default * 4);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: calc($radius-default / 2);
+
+        i {
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        padding: 0 calc($gap-default * 7);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        padding: 0 calc($gap-default * 2);
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .heading-hero {
+        font-size: 48px;
+    }
+
+    .back-blue-reverse {
+        background-color: $color-orange;
+    }
+
+    .fade-orange-inverse {
+        background-color: $color-fade-blue
+    }
+    .fade-blue-reverse {
+        background-color: $color-fade-orange;
+    }
 }

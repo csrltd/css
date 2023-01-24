@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Mulish:wght@700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -44,6 +44,7 @@ button {
 }
 .bnt-white:hover {
   background-color: #01455F;
+  color: white;
 }
 
 .btn-blue {
@@ -101,4 +102,80 @@ button {
 
 .span-blue {
   color: #00AEEF;
+}
+
+img {
+  width: 100%;
+}
+
+.fade-orange {
+  background-color: #FDEAD2;
+}
+
+.fade-orange-inverse {
+  background-color: #FDEAD2;
+}
+
+.fade-blue {
+  background-color: #CCEFFC;
+}
+
+.fade-blue-reverse {
+  background-color: #CCEFFC;
+}
+
+.back-orange {
+  background-color: #F7941D;
+}
+
+.back-blue {
+  background-color: #00AEEF;
+}
+
+.back-blue-reverse {
+  background-color: #00AEEF;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-icons a {
+  background-color: #01455F;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.social-icons a i {
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 56px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .container {
+    padding: 0 16px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .heading-hero {
+    font-size: 48px;
+  }
+  .back-blue-reverse {
+    background-color: #F7941D;
+  }
+  .fade-orange-inverse {
+    background-color: #CCEFFC;
+  }
+  .fade-blue-reverse {
+    background-color: #FDEAD2;
+  }
 }/*# sourceMappingURL=main.css.map */
