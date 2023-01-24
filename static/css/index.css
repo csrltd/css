@@ -1,0 +1,20 @@
+.hero {
+  height: 60vh;
+  position: relative;
+}
+.hero .container .row .col {
+  padding-top: 150px;
+  width: 40%;
+}
+.hero .container .row .right-img {
+  width: 50%;
+}
+.hero .container .row .right-img .hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=index.css.map */

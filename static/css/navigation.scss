@@ -1,0 +1,87 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+//Navigation
+
+header {
+        .topnav {
+            height: 56px;
+            background-color: $color-orange;
+            padding-top: 12px;
+            .row {
+                max-width: 1280px;
+
+                .contacts {
+                    display: flex;
+                    gap: calc($gap-default *3);
+                    align-items: center;
+                    a {
+                        display: flex;
+                        gap: $gap-default;
+                        align-items: center;
+                    }
+                }
+    
+                .social-icons {
+                    display: flex;
+                    align-items: center;
+                    gap: calc($gap-default *2);
+
+                    a {
+                        background-color: $color-dark;
+                        height: calc($gap-default * 4);
+                        width: calc($gap-default * 4);
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        border-radius: calc($radius-default / 2);
+
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        nav {
+            .row {
+                height: 100px;
+                gap: calc( $gap-default * 3);
+                .col {
+                    flex-direction: row;
+                    .logo {
+                        a {
+                            img {
+                                max-height: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+    
+                    .menu-items, .cta-buttons {
+                        display: flex;
+                        align-items: center;
+                        gap: calc($gap-default * 3);
+                    }
+                }
+            }
+        }
+    }

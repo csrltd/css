@@ -1,0 +1,44 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+
+//Index
+
+.hero {
+    height: 60vh;
+    position: relative;
+    .container {
+        .row {
+            .col {
+                padding-top: 150px;
+                width: 40%;
+            }
+            .right-img {
+                width: 50%;
+                .hero-img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 45%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

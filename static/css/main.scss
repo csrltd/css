@@ -1,0 +1,129 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@700&display=swap');
+
+//Basic setup
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: $color-dark;
+}
+
+a {
+    text-decoration: none;
+    color: $color-dark;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.heading {
+    font-family: 'Mulish', sans-serif;
+    font-size: 48px;
+}
+
+//Button
+
+button {
+    padding: 12px calc($gap-default * 4);
+    font-size: $font-body;
+    border-radius: $radius-default;
+    border: 1px solid transparent;
+    transition: linear 0.2s;
+}
+
+.bnt-white {
+    background-color: white;
+    color: $color-dark;
+    border: 1px solid white;
+    
+    &:hover {
+        background-color: $color-dark;
+
+    }
+}
+.btn-blue {
+    background-color: $color-dark;
+    color: white;
+    border: 1px solid $color-dark;
+
+    &:hover {
+        background-color: white;
+        color: $color-dark;
+    }
+}
+
+.btn-orange {
+    background-color: $color-orange;
+    color: $color-dark;
+    border: 1px solid $color-orange;
+
+    &:hover {
+        background-color: white;
+        color: $color-dark;
+        border: 1px solid $color-dark;
+    }
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: $color-dark;
+    border:1px solid $color-dark;
+    &:hover {
+        background-color: $color-dark;
+        color: white;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc($gap-default * 6);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: calc($gap-default * 2);
+}
+
+.span-orange {
+    color: $color-orange;
+}
+
+.span-blue {
+    color: $color-blue;
+}
