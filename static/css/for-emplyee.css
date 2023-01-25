@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Mulish:wght@700&display=swap");
+.service-section {
+  padding: 80px 0;
+}
+.service-section .container .row .col {
+  width: 50%;
+}
+.service-section .container .row .col .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-section .container .row .col .row .service {
+  padding: 56px;
+  width: 46%;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=for-emplyee.css.map */

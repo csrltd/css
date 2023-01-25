@@ -104,52 +104,6 @@ $font-heading: 48;
     }
 }
 
-.process {
-    padding: calc($gap-default * 10) 0;
-
-    .container {
-        .row {
-            .col {
-                width: 50%;
-
-                .process-cards {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: calc($gap-default * 4);
-
-                    .card {
-                        margin-top: calc($gap-default);
-                        padding: calc($gap-default * 4);
-                        border-radius: $radius-default;
-                        width: 45%;
-                        position: relative;
-                        .card-badge {
-                            width: calc($gap-default * 5);
-                            height: calc($gap-default * 5);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            border-radius: calc($radius-default /2);
-
-                            position: absolute;
-                            top: calc($gap-default * -1);
-                            left: calc($gap-default * -1);
-                        }
-                    }
-                }
-            }
-
-            .process-img {
-                img {
-                    max-width: 600px;
-                    height: 500px;
-                    object-fit: cover;
-                    border-radius: $radius-default;
-                }
-            }
-        }
-    }
-}
 
 .call-to-action {
     .container {
@@ -275,31 +229,6 @@ $font-heading: 48;
         .row {
             flex-direction: column;
             gap: calc($gap-default * 3);
-        }
-    }
-
-    footer {
-        padding: calc($gap-default * 6) calc($gap-default * 2);
-        .row {
-            flex-wrap: wrap;
-
-            .col {
-                display: block;
-                width: 40%;
-
-                .footer-title {
-                    font-size: 16px;
-                }
-
-                .footer-links {
-                    .footer-link {
-                        a {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-
         }
     }
 }

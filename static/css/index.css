@@ -56,43 +56,6 @@
   border-radius: 10px;
 }
 
-.process {
-  padding: 80px 0;
-}
-.process .container .row .col {
-  width: 50%;
-}
-.process .container .row .col .process-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-.process .container .row .col .process-cards .card {
-  margin-top: 8px;
-  padding: 32px;
-  border-radius: 10px;
-  width: 45%;
-  position: relative;
-}
-.process .container .row .col .process-cards .card .card-badge {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-}
-.process .container .row .process-img img {
-  max-width: 600px;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-
 .call-to-action .container {
   background-color: #01455F;
   padding: 80px;
@@ -174,21 +137,5 @@
   .call-to-action .row {
     flex-direction: column;
     gap: 24px;
-  }
-  footer {
-    padding: 48px 16px;
-  }
-  footer .row {
-    flex-wrap: wrap;
-  }
-  footer .row .col {
-    display: block;
-    width: 40%;
-  }
-  footer .row .col .footer-title {
-    font-size: 16px;
-  }
-  footer .row .col .footer-links .footer-link a {
-    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */

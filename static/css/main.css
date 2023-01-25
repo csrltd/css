@@ -154,6 +154,26 @@ img {
   color: white;
 }
 
+.page-header {
+  height: 400px;
+  background: url("/static/images/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.449);
+  background-blend-mode: overlay;
+  color: white;
+}
+.page-header .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 150px;
+  gap: 16px;
+}
+.page-header .container p {
+  width: 50%;
+}
+
 header .topnav {
   height: 56px;
   background-color: #F7941D;
@@ -186,6 +206,81 @@ header nav .row .col .menu-items, header nav .row .col .cta-buttons {
 }
 header nav .row .col .mobile-menu-btn {
   display: none;
+}
+
+.testimonials {
+  padding: 80px 0;
+}
+.testimonials .container .testimonies {
+  padding-top: 40px;
+}
+.testimonials .container .testimonies .testimony {
+  background-color: #CCEFFC;
+  padding: 48px 24px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+.testimonials .container .testimonies .testimony .t-icon {
+  height: 48px;
+  width: 48px;
+  background-color: #CCEFFC;
+  border-radius: 48px;
+  align-self: center;
+  position: absolute;
+  top: -22px;
+}
+.testimonials .container .testimonies .testimony .t-icon i {
+  font-size: 48px;
+}
+.testimonials .container .testimonies .testimony .t-profile {
+  position: absolute;
+  bottom: -40px;
+  align-self: center;
+}
+.testimonials .container .testimonies .testimony .t-profile img {
+  height: 64px;
+  width: 64px;
+  border-radius: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.process {
+  padding: 80px 0;
+}
+.process .container .row .col {
+  width: 50%;
+}
+.process .container .row .col .process-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.process .container .row .col .process-cards .card {
+  margin-top: 8px;
+  padding: 32px;
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+}
+.process .container .row .col .process-cards .card .card-badge {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+}
+.process .container .row .process-img img {
+  max-width: 600px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1100px) {

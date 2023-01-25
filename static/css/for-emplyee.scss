@@ -1,0 +1,43 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Mulish:wght@700&display=swap');
+
+.service-section {
+    padding: calc($gap-default * 10) 0;
+    .container {
+        .row {
+            .col {
+                width: 50%;
+            }
+            .col {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .service {
+                        padding: calc($gap-default * 7);
+                        width: 46%;
+
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

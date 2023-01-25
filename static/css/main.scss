@@ -185,6 +185,29 @@ img {
     }
 }
 
+//Pagre header
+
+.page-header {
+    height: 400px;
+    background: url('/static/images/hero-img.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.449);
+    background-blend-mode: overlay;
+    color: white;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 150px;
+        gap: calc($gap-default *2);
+
+        p {
+            width: 50%;
+        }
+    }
+}
+
 //Navigation
 
 header {
@@ -229,6 +252,99 @@ header {
     }
 }
 
+
+//Testimonials
+
+.testimonials {
+    padding: calc($gap-default * 10) 0;
+    .container {
+        .testimonies {
+            padding-top: calc($gap-default * 5);
+            .testimony {
+                background-color: $color-fade-blue;
+                padding: calc($gap-default * 6) calc($gap-default * 3);
+                border-radius: $radius-default;
+                position: relative;
+                text-align: center;
+
+                .t-icon {
+                    height: calc($gap-default * 6);
+                    width: calc($gap-default * 6);
+                    background-color: $color-fade-blue;
+                    border-radius: calc($gap-default * 6);
+                    align-self: center;
+                    position: absolute;
+                    top: -22px;
+
+                    i {
+                        font-size: calc($gap-default * 6);
+                    }
+                }
+
+                .t-profile {
+                    position: absolute;
+                    bottom: -40px;
+                    align-self: center;
+                    img {
+                        height: calc($gap-default * 8);
+                        width: calc($gap-default * 8);
+                        border-radius: calc($gap-default * 8);
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Process
+
+.process {
+    padding: calc($gap-default * 10) 0;
+
+    .container {
+        .row {
+            .col {
+                width: 50%;
+
+                .process-cards {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: calc($gap-default * 4);
+
+                    .card {
+                        margin-top: calc($gap-default);
+                        padding: calc($gap-default * 4);
+                        border-radius: $radius-default;
+                        width: 45%;
+                        position: relative;
+                        .card-badge {
+                            width: calc($gap-default * 5);
+                            height: calc($gap-default * 5);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: calc($radius-default /2);
+
+                            position: absolute;
+                            top: calc($gap-default * -1);
+                            left: calc($gap-default * -1);
+                        }
+                    }
+                }
+            }
+
+            .process-img {
+                img {
+                    max-width: 600px;
+                    height: 500px;
+                    object-fit: cover;
+                    border-radius: $radius-default;
+                }
+            }
+        }
+    }
+}
 
 // Top bar responsiveness
 
