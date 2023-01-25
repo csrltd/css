@@ -1,0 +1,124 @@
+.page-header {
+  height: 400px;
+  background: url("/static/images/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.449);
+  background-blend-mode: overlay;
+  color: white;
+}
+.page-header .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 150px;
+  gap: 16px;
+}
+.page-header .container p {
+  width: 50%;
+}
+
+.overview {
+  padding: 80px 0;
+}
+.overview .container p {
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  margin-top: 16px;
+}
+
+.values .container .row .col {
+  width: 50%;
+}
+.values .container .row .col .row {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.values .container .row .col .row .col {
+  padding: 32px;
+  width: 48%;
+  height: 90px;
+  border-radius: 10px;
+}
+.values .container .row .values-img img {
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimonials {
+  padding: 80px 0;
+}
+.testimonials .container .testimonies {
+  padding-top: 40px;
+}
+.testimonials .container .testimonies .testimony {
+  background-color: #CCEFFC;
+  padding: 48px 24px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+.testimonials .container .testimonies .testimony .t-icon {
+  height: 48px;
+  width: 48px;
+  background-color: #CCEFFC;
+  border-radius: 48px;
+  align-self: center;
+  position: absolute;
+  top: -22px;
+}
+.testimonials .container .testimonies .testimony .t-icon i {
+  font-size: 48px;
+}
+.testimonials .container .testimonies .testimony .t-profile {
+  position: absolute;
+  bottom: -40px;
+  align-self: center;
+}
+.testimonials .container .testimonies .testimony .t-profile img {
+  height: 64px;
+  width: 64px;
+  border-radius: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 760px) {
+  .page-header {
+    height: 300px;
+  }
+  .page-header .container {
+    padding-top: 100px;
+  }
+  .page-header .container p {
+    width: 100%;
+  }
+  .overview .container p {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .values .container .row {
+    flex-direction: column-reverse;
+  }
+  .values .container .row .col {
+    width: 100%;
+  }
+  .values .container .row .col .row {
+    flex-direction: row;
+  }
+  .values .container .row .col .row .col {
+    width: 47%;
+    height: 120px;
+  }
+  .values .container .row .values-img img {
+    height: 250px;
+  }
+  .testimonials .container .testimonies {
+    flex-direction: column;
+    gap: 80px;
+  }
+}/*# sourceMappingURL=about.css.map */

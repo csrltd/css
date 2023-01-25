@@ -154,6 +154,120 @@ img {
   color: white;
 }
 
+header .topnav {
+  height: 56px;
+  background-color: #F7941D;
+  padding-top: 12px;
+}
+header .topnav .row {
+  max-width: 1280px;
+}
+header .topnav .row .contacts {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+header .topnav .row .contacts a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+header nav .row {
+  height: 100px;
+  gap: 24px;
+}
+header nav .row .col {
+  flex-direction: row;
+}
+header nav .row .col .menu-items, header nav .row .col .cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .row .col .mobile-menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  header .topnav .row .contacts .top-bar-email {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .topnav .row .contacts .top-bar-location, header .topnav .row .contacts .top-bar-email {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header nav .row .col .menu-items {
+    display: none;
+  }
+  header nav .row .col .cta-buttons {
+    display: none;
+  }
+  header nav .row .col .mobile-menu-btn {
+    display: block;
+  }
+  header nav .row .col .mobile-menu-btn i {
+    font-size: 40px;
+  }
+}
+footer {
+  background-color: #01455F;
+  color: white;
+  padding: 80px;
+}
+footer a {
+  color: white;
+}
+footer .row {
+  align-items: flex-start;
+}
+footer .footer-title {
+  font-size: 18px;
+}
+footer .footer-links {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .footer-links .footer-link a {
+  font-size: 16px;
+  font-weight: lighter;
+}
+footer .footer-bottom {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.459);
+  font-weight: lighter;
+}
+footer .footer-bottom .follow {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+footer .footer-bottom .follow .social-icons a {
+  background-color: #F7941D;
+}
+
+footer {
+  padding: 48px 16px;
+}
+footer .row {
+  flex-wrap: wrap;
+}
+footer .row .col {
+  display: block;
+  width: 40%;
+}
+footer .row .col .footer-title {
+  font-size: 16px;
+}
+footer .row .col .footer-links .footer-link a {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1300px) {
   .container {
     padding: 0 56px;
@@ -170,7 +284,7 @@ img {
     font-size: 48px;
   }
   .back-blue-reverse {
-    background-color: #F7941D;
+    background-color: #00AEEF;
   }
   .fade-orange-inverse {
     background-color: #CCEFFC;
