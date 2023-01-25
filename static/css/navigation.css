@@ -28,6 +28,9 @@ header nav .row .col .menu-items, header nav .row .col .cta-buttons {
   align-items: center;
   gap: 24px;
 }
+header nav .row .col .mobile-menu-btn {
+  display: none;
+}
 
 @media screen and (max-width: 1100px) {
   header .topnav .row .contacts .top-bar-email {
@@ -45,6 +48,9 @@ header nav .row .col .menu-items, header nav .row .col .cta-buttons {
   }
   header nav .row .col .cta-buttons {
     display: none;
+  }
+  header nav .row .col .mobile-menu-btn {
+    display: block;
   }
   header nav .row .col .mobile-menu-btn i {
     font-size: 40px;

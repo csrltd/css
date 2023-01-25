@@ -56,6 +56,9 @@ header {
                         align-items: center;
                         gap: calc($gap-default * 3);
                     }
+                    .mobile-menu-btn {
+                        display: none;
+                    }
                 }
             }
         }
@@ -110,6 +113,7 @@ header {
                         }
 
                         .mobile-menu-btn {
+                            display: block;
                             i {
                                 font-size: calc($gap-default* 5);
                             }
