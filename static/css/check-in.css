@@ -1,0 +1,13 @@
+.check-in-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-in-section .container {
+  max-width: 400px;
+}
+.check-in-section .container .row .check-in-form .chek-in-form-container {
+  display: grid;
+  gap: 24px;
+}/*# sourceMappingURL=check-in.css.map */

@@ -12,6 +12,14 @@
 .service-section .container .row .col .row .service {
   padding: 56px;
   width: 46%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
+  gap: 8px;
+}
+.service-section .container .row .col .row .service img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=for-emplyee.css.map */

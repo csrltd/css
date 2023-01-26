@@ -346,6 +346,44 @@ header {
     }
 }
 
+//Form
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: $radius-default;
+        border: 1px solid $color-dark;
+
+        &::placeholder {
+            font-size: 16px;
+            color: $color-dark;
+        }
+    }
+
+    input[type=submit] {
+        width: 50%;
+        background-color: $color-orange;
+        border-radius: $radius-default;
+        border: none;
+        font-size: 18px;
+        color: $color-dark;
+
+        transition: linear 0.25s;
+
+        &:hover {
+            background-color: $color-dark;
+            color: $color-orange;
+        }
+    }
+}
+
 // Top bar responsiveness
 
     //Mobile 540px
@@ -460,28 +498,30 @@ footer {
 
 //Footer responsive
 
-footer {
-    padding: calc($gap-default * 6) calc($gap-default * 2);
-    .row {
-        flex-wrap: wrap;
-
-        .col {
-            display: block;
-            width: 40%;
-
-            .footer-title {
-                font-size: 16px;
-            }
-
-            .footer-links {
-                .footer-link {
-                    a {
-                        font-size: 12px;
+@media screen and(max-width: 740px) {
+    footer {
+        padding: calc($gap-default * 6) calc($gap-default * 2);
+        .row {
+            flex-wrap: wrap;
+    
+            .col {
+                display: block;
+                width: 40%;
+    
+                .footer-title {
+                    font-size: 16px;
+                }
+    
+                .footer-links {
+                    .footer-link {
+                        a {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
+    
         }
-
     }
 }
 

@@ -32,9 +32,16 @@ $font-heading: 48;
                     .service {
                         padding: calc($gap-default * 7);
                         width: 46%;
-
+                        border-radius: $radius-default;
                         display: flex;
                         align-items: center;
+                        gap: $gap-default;
+
+                        img {
+                            height: 50px;
+                            width: 50px;
+                            object-fit: cover;
+                        }
                     }
                 }
             }

@@ -1,0 +1,85 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+.login-section {
+    height: 100vh;
+
+    .row {
+        .col {
+            width: 50%;
+        }
+
+        .login-image {
+            .spacer {
+                height: 100vh;
+            }
+
+            background-image: url('/static/images/hero-img.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-form {
+            justify-content: center;
+            align-items: center;
+
+            .login-form-container {
+                display: grid;
+                gap: 20px;
+
+                width: 40%;
+
+                .logo {
+                    max-width: 114px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 900px) {
+    .login-section {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        background: url('/static/images/hero-img.png');
+        .container {
+            .row {
+                position: absolute;
+                bottom: 0;
+                right: 0px;
+                left: 0px;
+                flex-direction: column;
+                .col {
+                    width: 100%;
+                }
+                .login-image {
+                    display: none;
+                }
+                .login-form {
+                    background-color: white;
+                    .login-form-container {
+                        padding: 50px 30px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

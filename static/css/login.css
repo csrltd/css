@@ -1,0 +1,55 @@
+.login-section {
+  height: 100vh;
+}
+.login-section .row .col {
+  width: 50%;
+}
+.login-section .row .login-image {
+  background-image: url("/static/images/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-section .row .login-image .spacer {
+  height: 100vh;
+}
+.login-section .row .login-form {
+  justify-content: center;
+  align-items: center;
+}
+.login-section .row .login-form .login-form-container {
+  display: grid;
+  gap: 20px;
+  width: 40%;
+}
+.login-section .row .login-form .login-form-container .logo {
+  max-width: 114px;
+}
+
+@media screen and (max-width: 900px) {
+  .login-section {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background: url("/static/images/hero-img.png");
+  }
+  .login-section .container .row {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    flex-direction: column;
+  }
+  .login-section .container .row .col {
+    width: 100%;
+  }
+  .login-section .container .row .login-image {
+    display: none;
+  }
+  .login-section .container .row .login-form {
+    background-color: white;
+  }
+  .login-section .container .row .login-form .login-form-container {
+    padding: 50px 30px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=login.css.map */

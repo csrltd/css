@@ -283,6 +283,45 @@ header nav .row .col .mobile-menu-btn {
   border-radius: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form input {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 10px;
+  border: 1px solid #01455F;
+}
+form input::-moz-placeholder {
+  font-size: 16px;
+  color: #01455F;
+}
+form input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #01455F;
+}
+form input::placeholder {
+  font-size: 16px;
+  color: #01455F;
+}
+form input[type=submit] {
+  width: 50%;
+  background-color: #F7941D;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: #01455F;
+  transition: linear 0.25s;
+}
+form input[type=submit]:hover {
+  background-color: #01455F;
+  color: #F7941D;
+}
+
 @media screen and (max-width: 1100px) {
   header .topnav .row .contacts .top-bar-email {
     display: none;
@@ -346,23 +385,24 @@ footer .footer-bottom .follow .social-icons a {
   background-color: #F7941D;
 }
 
-footer {
-  padding: 48px 16px;
+@media screen and (max-width: 740px) {
+  footer {
+    padding: 48px 16px;
+  }
+  footer .row {
+    flex-wrap: wrap;
+  }
+  footer .row .col {
+    display: block;
+    width: 40%;
+  }
+  footer .row .col .footer-title {
+    font-size: 16px;
+  }
+  footer .row .col .footer-links .footer-link a {
+    font-size: 12px;
+  }
 }
-footer .row {
-  flex-wrap: wrap;
-}
-footer .row .col {
-  display: block;
-  width: 40%;
-}
-footer .row .col .footer-title {
-  font-size: 16px;
-}
-footer .row .col .footer-links .footer-link a {
-  font-size: 12px;
-}
-
 @media screen and (max-width: 1300px) {
   .container {
     padding: 0 56px;
