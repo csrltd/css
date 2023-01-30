@@ -249,22 +249,22 @@ header nav .row .col .mobile-menu-btn {
 .process {
   padding: 80px 0;
 }
-.process .container .row .col {
+.process .container .row .process-col {
   width: 50%;
 }
-.process .container .row .col .process-cards {
+.process .container .row .process-col .process-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
-.process .container .row .col .process-cards .card {
+.process .container .row .process-col .process-cards .card {
   margin-top: 8px;
   padding: 32px;
   border-radius: 10px;
   width: 45%;
   position: relative;
 }
-.process .container .row .col .process-cards .card .card-badge {
+.process .container .row .process-col .process-cards .card .card-badge {
   width: 40px;
   height: 40px;
   display: flex;
