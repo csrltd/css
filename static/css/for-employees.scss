@@ -16,32 +16,199 @@ $gap-default: 8px;
 $font-body: 18px;
 $font-heading: 48;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Mulish:wght@700&display=swap');
 
-.service-section {
-    padding: calc($gap-default * 10) 0;
+.offer {
+    padding: 100px 0 50px 0;
+    .container {
+        .row {
+            .col {
+                border:1px solid;
+                border-bottom: 10px solid transparent;
+                padding: 50px;
+                border-radius: $radius-default;
+            }
+            .temprary, .term-to-term {
+                border-color: $color-fade-blue;
+            }
+            .direct-hire {
+                border-color: $color-fade-orange;
+            }
+        }
+    }
+}
+
+.job-brief {
+    .container {
+        .row {
+            .job {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                background-color: $color-dark;
+                color: white;
+                padding: 50px;
+                width: 450px;
+                border-radius: $radius-default;
+
+                .certificates {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    .certificate {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+
+                        i {
+                            color: $color-orange;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.benefits-section {
+    margin-bottom: 50px;
+    padding: 50px 0;
     .container {
         .row {
             .col {
                 width: 50%;
             }
-            .col {
-                .row {
+            .col-img {
+                position: relative;
+                img {
+                    max-width: 450px;
+                    height: 600px;
+                    object-fit: cover;
+                    border-radius: $radius-default;
+                }
+
+                .image-text {
+                    padding: 30px;
+                    background-color: $color-fade-orange;
+                    border-radius: $radius-default;
+                    max-width: 300px;
+
+                    position: absolute;
+                    bottom: -50px;
+                    left: -30px;
+                }
+            }
+            .col-benefits {
+                
+                .benefits {
+                    margin-top: 50px;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 20px;
+
+                    .benefit {
+                        img {
+                            height: 40px;
+                            width: 40px;
+                        }
+                        p {
+                            font-size: 32px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.events {
+    padding: 50px 0;
+    .container {
+        .oportunities {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            gap: 45px;
+
+            .opportunity {
+                padding: 32px;
+                border-radius: $radius-default;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .title {
                     display: flex;
-                    flex-wrap: wrap;
-                    .service {
-                        padding: calc($gap-default * 7);
-                        width: 46%;
-                        border-radius: $radius-default;
+                    align-items: center;
+                    gap: 12px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .training, .programs {
+                background-color: $color-fade-blue;
+                .title {
+                    color: $color-blue;
+                }
+            }
+
+            .certification {
+                background-color: $color-fade-orange;
+
+                .title {
+                    color: $color-orange;
+                }
+            }
+
+        }
+    }
+}
+
+.resources-for-employee {
+    padding: 50px 0;
+    .container {
+        display: grid;
+        gap: 30px;
+        .resources {
+            display: flex;
+            justify-content: space-between;
+            gap: 45px;
+            .resource {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .recource-content {
+                    flex: 1 0 auto;
+                    background-color: $color-dark;
+                    color: white;
+                    padding: 30px;
+                    border-radius: $radius-default $radius-default 0 0 ;
+                    display: grid;
+                    gap: 30px;
+
+                    .resource-list {
+                        display: grid;
+                        gap: 24px;
+
+                        .list-item {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                        }
+                    }
+                }
+                .read-more {   
+                    padding: 30px;
+                    background-color: $color-orange;
+                    border-radius: 0 0 $radius-default $radius-default ;
+                    a {
+                        color: white;
                         display: flex;
                         align-items: center;
-                        gap: $gap-default;
-
-                        img {
-                            height: 50px;
-                            width: 50px;
-                            object-fit: cover;
-                        }
+                        gap: 12px;
                     }
                 }
             }
