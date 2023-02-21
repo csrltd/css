@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
   color: #01455F;
+  cursor: pointer;
 }
 
 li {
@@ -40,6 +41,7 @@ button {
   border-radius: 10px;
   border: 1px solid transparent;
   transition: linear 0.2s;
+  cursor: pointer;
 }
 
 .bnt-white {
@@ -53,9 +55,9 @@ button {
 }
 
 .btn-blue {
-  background-color: #01455F;
+  background-color: #00AEEF;
   color: white;
-  border: 1px solid #01455F;
+  border: 1px solid #00AEEF;
 }
 .btn-blue:hover {
   background-color: white;
@@ -76,10 +78,10 @@ button {
 .btn-outline {
   background-color: transparent;
   color: #01455F;
-  border: 1px solid #01455F;
+  border: 1px solid #00AEEF;
 }
 .btn-outline:hover {
-  background-color: #01455F;
+  background-color: #00AEEF;
   color: white;
 }
 
@@ -302,10 +304,6 @@ form input {
   border: 1px solid #01455F;
 }
 form input::-moz-placeholder {
-  font-size: 16px;
-  color: #01455F;
-}
-form input:-ms-input-placeholder {
   font-size: 16px;
   color: #01455F;
 }

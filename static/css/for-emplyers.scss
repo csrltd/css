@@ -48,3 +48,129 @@ $font-heading: 48;
         }
     }
 }
+
+
+// new sections added 
+// our disciplines
+.disciplines {
+    position: relative;
+    .container {
+        max-width: 100%;
+        background-color: $color-dark;
+        max-height: 600px;
+
+        span {
+            color: $color-orange;
+        }
+
+        .row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+            .col-title {
+                width: 40%;
+                color: white;
+                padding: 50px;
+
+                p {
+                    width: 80%;
+                }
+            }
+
+            .col-img {
+                width: 60%;
+
+                img {
+                    object-fit: cover;
+                    height: 600px;
+                }
+            }
+        }
+    }
+}
+
+// under row section 
+.row-under {
+    background-color: rgba(255, 255, 255, 0.888);
+    position: absolute;
+    margin-top: -30rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: calc($gap-default * 3);
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 50%;
+    border-radius: $radius-default;
+    padding: 20px 20px;
+    margin-left: 25rem;
+
+    .col {
+        flex-basis: calc(calc(33.33% - 20px));
+
+        
+        .color-blue {
+            color: $color-blue;
+        }
+
+        .color-orange {
+            color: $color-orange;
+        }
+
+        // icon colors 
+        .icon-blue {
+            color: $color-blue;
+        }
+        .icon-orange {
+            color: $color-orange;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+    }
+} 
+
+// a section added
+.call-to-action {
+    .container {
+        background-color: $color-blue;
+        padding: calc($gap-default * 10);
+        margin-bottom: calc($gap-default * 10);
+        color: $color-dark;
+        border-radius: $radius-default;
+
+        .line {
+            border: 1px solid $color-dark;
+            height: 10rem;
+        }
+
+        .title {
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .cta-text {
+            p {
+                font-weight: light;
+            }
+        }
+        a {
+            button {
+                background-color: $color-dark;
+                border: transparent;
+                color: $color-blue;
+                width: 10rem;
+            }
+
+            button:hover {
+                background: transparent;
+                color: $color-dark;
+                border: 1px solid $color-dark;
+            }
+        }
+    }
+}
+
+
+

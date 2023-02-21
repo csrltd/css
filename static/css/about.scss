@@ -61,8 +61,140 @@ $font-heading: 48;
     }
 }
 
+// new section (unique)
+.unique {
+    margin: 100px auto;
+    .container {
+        max-width: 100%;
+        background-color: $color-dark;
+        h1 {
+            color: $color-blue;
+        }
+        span {
+            color: $color-orange;
+        }
+        
+        .row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
 
-//Mobilem responsive
+            .col-text {
+                width: 30%;
+                img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+
+            .col-2 {
+                padding: 50px 100px;
+                width: 70%;
+
+                p {
+                    color: white;
+                }
+            }
+        } 
+    }
+}
+
+// added the team section
+// our team 
+.team {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: calc($gap-default * 2);
+        span {
+            color: $color-orange;
+        }
+        .row {
+            flex-wrap: wrap;
+            .col {
+                padding: 12px;
+                transition: linear 0.2s;
+                img {
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+    
+                p {
+                    color: $color-orange;
+                }
+    
+                &:hover {
+                    background-color: rgb(247, 244, 244);
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                    border-radius: $radius-default; 
+                }
+            }
+        }
+    }
+}
+
+// partners section
+.partners{
+    margin: 100px auto;
+    .container {
+        display: grid;
+        gap: 18px;
+        span {
+            color: $color-orange;
+        }
+    }
+}
+
+// call to action
+.call-to-action {
+    .container {
+        background-color: $color-blue;
+        padding: calc($gap-default * 10);
+        margin-bottom: calc($gap-default * 10);
+        color: $color-dark;
+        border-radius: $radius-default;
+
+        .line {
+            border: 1px solid $color-dark;
+            height: 10rem;
+        }
+
+        .title {
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .cta-text {
+            p {
+                font-weight: light;
+            }
+        }
+        a {
+            button {
+                background-color: $color-dark;
+                border: transparent;
+                color: $color-blue;
+                width: 10rem;
+            }
+
+            button:hover {
+                background: transparent;
+                color: $color-dark;
+                border: 1px solid $color-dark;
+            }
+        }
+    }
+}
+
+
+
+
+
+//Mobile responsive
 
 @media screen and (max-width: 760px) {
 

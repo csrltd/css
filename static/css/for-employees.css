@@ -83,6 +83,11 @@
 .events {
   padding: 50px 0;
 }
+.events .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .events .container .oportunities {
   margin-top: 50px;
   display: flex;
@@ -111,11 +116,19 @@
 .events .container .oportunities .training .title, .events .container .oportunities .programs .title {
   color: #00AEEF;
 }
+.events .container .oportunities .training a, .events .container .oportunities .programs a {
+  color: #00AEEF;
+  text-transform: capitalize;
+}
 .events .container .oportunities .certification {
   background-color: #FDEAD2;
 }
 .events .container .oportunities .certification .title {
   color: #F7941D;
+}
+.events .container .oportunities .certification a {
+  color: #F7941D;
+  text-transform: capitalize;
 }
 
 .resources-for-employee {
