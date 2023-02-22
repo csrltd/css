@@ -72,8 +72,19 @@ $font-heading: 48;
                 color: white;
                 padding: 50px;
 
+                h1 {
+                    width: 50%;
+                    padding-bottom: calc($gap-default * 10);
+                }
+
                 p {
-                    width: 80%;
+                    width: 60%;
+                    padding-bottom: 16px;
+                }
+
+                .line {
+                    border: 1px solid $color-orange;
+                    width: 6.5rem;
                 }
             }
 
@@ -93,7 +104,7 @@ $font-heading: 48;
 .row-under {
     background-color: rgba(255, 255, 255, 0.888);
     position: absolute;
-    margin-top: -30rem;
+    margin-top: -33rem;
     display: flex;
     justify-content: flex-start;
     gap: calc($gap-default * 3);
@@ -130,47 +141,7 @@ $font-heading: 48;
     }
 } 
 
-// a section added
-.call-to-action {
-    .container {
-        background-color: $color-blue;
-        padding: calc($gap-default * 10);
-        margin-bottom: calc($gap-default * 10);
-        color: $color-dark;
-        border-radius: $radius-default;
 
-        .line {
-            border: 1px solid $color-dark;
-            height: 10rem;
-        }
-
-        .title {
-            h3 {
-                font-size: 24px;
-                font-weight: bold;
-            }
-        }
-        .cta-text {
-            p {
-                font-weight: light;
-            }
-        }
-        a {
-            button {
-                background-color: $color-dark;
-                border: transparent;
-                color: $color-blue;
-                width: 10rem;
-            }
-
-            button:hover {
-                background: transparent;
-                color: $color-dark;
-                border: 1px solid $color-dark;
-            }
-        }
-    }
-}
 
 
 

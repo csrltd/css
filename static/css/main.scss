@@ -391,6 +391,49 @@ form {
     }
 }
 
+// added a new global section to some of the pages
+// call-to-action
+.call-to-action {
+    .container {
+        background-color: $color-blue;
+        padding: 40px;
+        margin-bottom: calc($gap-default * 10);
+        color: $color-dark;
+        border-radius: $radius-default;
+
+        .line {
+            border: 1px solid $color-dark;
+            height: 10rem;
+        }
+
+        .title {
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .cta-text {
+            p {
+                font-weight: light;
+            }
+        }
+        a {
+            button {
+                background-color: $color-dark;
+                border: transparent;
+                color: $color-blue;
+                width: 10rem;
+            }
+
+            button:hover {
+                background: transparent;
+                color: $color-dark;
+                border: 1px solid $color-dark;
+            }
+        }
+    }
+}
+
 // Top bar responsiveness
 
     //Mobile 540px

@@ -59,36 +59,6 @@
   border-radius: 10px;
 }
 
-.call-to-action .container {
-  background-color: #00AEEF;
-  padding: 80px;
-  margin-bottom: 80px;
-  color: #01455F;
-  border-radius: 10px;
-}
-.call-to-action .container .line {
-  border: 1px solid #01455F;
-  height: 10rem;
-}
-.call-to-action .container .title h3 {
-  font-size: 24px;
-  font-weight: bold;
-}
-.call-to-action .container .cta-text p {
-  font-weight: light;
-}
-.call-to-action .container a button {
-  background-color: #01455F;
-  border: transparent;
-  color: #00AEEF;
-  width: 10rem;
-}
-.call-to-action .container a button:hover {
-  background: transparent;
-  color: #01455F;
-  border: 1px solid #01455F;
-}
-
 .our-partners-institutions {
   background-color: #FFFAF4;
   padding: 80px 0;
@@ -208,5 +178,10 @@
   }
   .call-to-action .row .line {
     display: none;
+  }
+  .our-partners-institutions .container .row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -109,48 +109,6 @@ $font-heading: 48;
     }
 }
 
-
-.call-to-action {
-    .container {
-        background-color: $color-blue;
-        padding: calc($gap-default * 10);
-        margin-bottom: calc($gap-default * 10);
-        color: $color-dark;
-        border-radius: $radius-default;
-
-        .line {
-            border: 1px solid $color-dark;
-            height: 10rem;
-        }
-
-        .title {
-            h3 {
-                font-size: 24px;
-                font-weight: bold;
-            }
-        }
-        .cta-text {
-            p {
-                font-weight: light;
-            }
-        }
-        a {
-            button {
-                background-color: $color-dark;
-                border: transparent;
-                color: $color-blue;
-                width: 10rem;
-            }
-
-            button:hover {
-                background: transparent;
-                color: $color-dark;
-                border: 1px solid $color-dark;
-            }
-        }
-    }
-}
-
 // added a new section(our partner institution)
 .our-partners-institutions {
     background-color: $color-fade-organge-50;
@@ -320,5 +278,16 @@ $font-heading: 48;
             }
         }
     }
+
+    .our-partners-institutions {
+        .container {
+            .row {
+                display: flex;
+                flex-direction: column;
+                gap: calc($gap-default * 3);
+            }
+        }
+    }
 }
 
+// 

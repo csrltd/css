@@ -1,0 +1,86 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+// general styles
+section {
+    margin: 100px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-default
+}
+
+.contact {
+    .container {
+        span {
+            color: $color-orange;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: calc($gap-default * 2);
+            
+            .col-1 {
+                display: flex;
+                flex-direction: column;
+                gap: $gap-default;
+                background-color: $color-dark;
+                color: white;
+                padding: 50px;
+                width: 70%;
+                border-radius: $gap-default;
+    
+                .icon {
+                    color: $color-orange;
+                }
+    
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: calc($gap-default * 3);
+                }
+            }
+
+            .col {
+                .form {
+                    input {
+                        width: 300px;
+                        border: 1px solid rgba(128, 128, 128, 0.434);
+                        border-radius: $gap-default;
+                        padding: 10px 10px;
+                    }
+
+                    textarea {
+                        width: 300px;
+                        border: 1px solid rgba(128, 128, 128, 0.434);
+                        border-radius: $gap-default;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
