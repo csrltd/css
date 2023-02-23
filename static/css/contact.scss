@@ -28,6 +28,8 @@ form {
 
 // contacts and message form
 .contact {
+    padding: calc($gap-default * 10) 0;
+    
     .container {
         span {
             color: $color-orange;

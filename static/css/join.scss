@@ -1,0 +1,59 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+.join {
+    padding: calc($gap-default * 10) 0;
+    .container {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 100vh;
+        padding: 40px auto;
+
+       h1 {
+        padding-bottom: 10px;
+        font-size: 30px;
+       }
+
+       p {
+        padding-bottom: 20px;
+       }
+
+       input {
+        width: 300px;
+       }
+
+       select {
+            width: 300px;
+            border: 1px solid $color-dark;
+            border-radius: $gap-default;
+            padding: 16px 24px;
+       }
+       
+       button {
+        width: 300px;
+        background-color: $color-orange;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid $color-orange;
+            color: $color-orange;
+        }
+       }
+    }
+}

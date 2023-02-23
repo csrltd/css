@@ -4,6 +4,9 @@ form {
   gap: 8px;
 }
 
+.contact {
+  padding: 80px 0;
+}
 .contact .container span {
   color: #F7941D;
 }
