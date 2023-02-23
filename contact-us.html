@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <title>Contact Us | Cohesive Staffing Resources</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -96,8 +98,8 @@
                                 <h3>Location</h3>
                             </div>
                         </div>
-                        <p>2510 E Independence 
-                            St, Shawnee, OK 74804, 
+                        <p>2510 E Independence
+                            St, Shawnee, OK 74804,
                             United States</p>
                     </div>
 
@@ -127,30 +129,119 @@
                         <p>kigali@gmail.com</p>
                     </div>
                 </div>
-
-                <!-- second col -->
                 <!-- form -->
                 <div class="col">
-                    <div class="form">
-                        <!-- names -->
-                        <label>
-                            <input type="text" name="name" placeholder="First Name">
-                            <input type="text" name="name" placeholder="last Name">
-                        </label>
+                        <form>
+                            <label>
+                                <input type="text" name="name" placeholder="First Name">
+                                <input type="text" name="name" placeholder="last Name">
+                            </label>
 
-                        <!-- phone number -->
-                        <label>
-                            <input type="phone" placeholder="Phone Number">
-                        </label>
+                            <!-- phone number -->
+                            <label>
+                                <input type="phone" placeholder="Phone Number">
+                            </label>
 
-                        <!-- message -->
-                        <label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </label>
-                    </div>
+                            <!-- message -->
+                            <label>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            </label>
+
+                            <!-- sending message -->
+                            <button type="submit" class="submit-btn">
+                                Send Message
+                            </button>
+                        </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- map -->
+    <section class="map">
+        <div class="container">
+            <div class="map-location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.499657960703!2d30.094012214924884!3d-1.9534435372691505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x64e8a36be1f73c77%3A0x13d6066392f7624c!2sComprehensive%20Staffing%20Resources!5e0!3m2!1sen!2srw!4v1676450976959!5m2!1sen!2srw"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="row container">
+
+            <!--For employees-->
+            <div class="col emplyees">
+                <h4 class="footer-title">For Employers</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="">Login into your account</a></li>
+                    <li class="footer-link"><a href="">Create an Account</a></li>
+                    <li class="footer-link"><a href="">How to find work</a></li>
+                    <li class="footer-link"><a href="">Direct contact</a></li>
+                    <li class="footer-link"><a href="">Rules and Regurations</a></li>
+                    <li class="footer-link"><a href="">Training resources</a></li>
+                    <li class="footer-link"><a href="">Get hired faster</a></li>
+                </ul>
+            </div>
+
+            <!--For employers-->
+            <div class="col emplyers">
+                <h4 class="footer-title">For Employers</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="">Employers portal</a></li>
+                    <li class="footer-link"><a href="">Hire an employee</a></li>
+                    <li class="footer-link"><a href="">How to find work</a></li>
+                    <li class="footer-link"><a href="">How it works</a></li>
+                    <li class="footer-link"><a href="">Direct contact</a></li>
+                    <li class="footer-link"><a href="">Terms and conditions</a></li>
+                </ul>
+            </div>
+
+            <!--Resources-->
+            <div class="col resources">
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="">Learning portal</a></li>
+                    <li class="footer-link"><a href="">Help and Support</a></li>
+                    <li class="footer-link"><a href="">Success stories</a></li>
+                    <li class="footer-link"><a href="">Free resume tool</a></li>
+                    <li class="footer-link"><a href="">Trust and safety</a></li>
+                    <li class="footer-link"><a href="">Training materials</a></li>
+                    <li class="footer-link"><a href="">Reading books</a></li>
+                </ul>
+            </div>
+
+            <!--Company-->
+            <div class="col company">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="">About us</a></li>
+                    <li class="footer-link"><a href="">Leadership</a></li>
+                    <li class="footer-link"><a href="">Careers</a></li>
+                    <li class="footer-link"><a href="">Our impact</a></li>
+                    <li class="footer-link"><a href="">Legal statement</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row container footer-bottom">
+            <div class="follow">
+                <span>Follow us</span>
+                <div class="social-icons social-icons-footer">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="copy">
+                <i class="far fa-copyright"></i> <span>copyright 2023</span>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

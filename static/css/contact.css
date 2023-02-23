@@ -2,7 +2,7 @@ section {
   margin: 100px auto;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -38,15 +38,39 @@ section {
   align-items: center;
   gap: 24px;
 }
-.contact .container .row .col .form input {
+.contact .container .row .col form input {
   width: 300px;
   border: 1px solid rgba(128, 128, 128, 0.434);
   border-radius: 8px;
   padding: 10px 10px;
 }
-.contact .container .row .col .form textarea {
-  width: 300px;
+.contact .container .row .col form textarea {
+  width: 600px;
+  height: 300px;
+  font-size: 16px;
   border: 1px solid rgba(128, 128, 128, 0.434);
   border-radius: 8px;
   padding: 10px 10px;
+  resize: none;
+}
+.contact .container .row .col form textarea::-moz-placeholder {
+  color: #01455F;
+  font-family: "Inter", sans-serif;
+}
+.contact .container .row .col form textarea::placeholder {
+  color: #01455F;
+  font-family: "Inter", sans-serif;
+}
+.contact .container .row .col form button {
+  width: 300px;
+  background-color: #F7941D;
+  color: #01455F;
+}
+.contact .container .row .col form button:hover {
+  background: transparent;
+  border: 1px solid #01455F;
+}
+
+.map .container .map-location iframe {
+  border-radius: 10px;
 }/*# sourceMappingURL=contact.css.map */

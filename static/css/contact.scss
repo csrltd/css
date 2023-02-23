@@ -21,12 +21,14 @@ section {
     margin: 100px auto;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     gap: $gap-default
 }
 
+
+// contacts and message form
 .contact {
     .container {
         span {
@@ -65,7 +67,7 @@ section {
             }
 
             .col {
-                .form {
+                form {
                     input {
                         width: 300px;
                         border: 1px solid rgba(128, 128, 128, 0.434);
@@ -74,12 +76,42 @@ section {
                     }
 
                     textarea {
-                        width: 300px;
+                        width: 600px;
+                        height: 300px;
+                        font-size: 16px;
                         border: 1px solid rgba(128, 128, 128, 0.434);
                         border-radius: $gap-default;
                         padding: 10px 10px;
+                        resize: none;
+                    }
+
+                    textarea::placeholder {
+                        color: $color-dark;
+                        font-family: 'Inter', sans-serif;
+                    }
+
+                    button {
+                        width: 300px;
+                        background-color: $color-orange;
+                        color: $color-dark;
+                        
+                        &:hover {
+                            background: transparent;
+                            border: 1px solid $color-dark;
+                        }
                     }
                 }
+            }
+        }
+    }
+}
+
+// map
+.map {
+    .container {
+        .map-location {
+            iframe {
+                border-radius: $radius-default;
             }
         }
     }
