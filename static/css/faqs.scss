@@ -1,0 +1,131 @@
+//Solid Colors
+$color-orange: #F7941D;
+$color-blue: #00AEEF;
+$color-dark: #01455F;
+
+//Faded colors
+
+$color-fade-orange: #FDEAD2;
+$color-fade-blue: #CCEFFC;
+$color-fade-organge-50: #FFFAF4;
+
+//Other Variables
+$radius-default: 10px;
+$gap-default: 8px;
+//Fonts
+$font-body: 18px;
+$font-heading: 48;
+
+
+// FAQS section
+.faqs {
+    margin: 100px auto;
+
+    .container {
+        h1 {
+            span {
+                color: $color-orange;
+            }
+        }
+
+        .questions {
+            .question-section {
+
+                .single-question {
+                    margin: 50px auto;
+                    background-color: $color-fade-organge-50;
+                    padding: 25px 50px;
+                    border-radius: $radius-default;
+
+                    h2 {
+                        color: $color-orange;
+                    }
+
+                    button {
+                        background: transparent;
+
+                        .angle-btn {
+                            display: none;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+                
+                .question-text {
+                    display: none;
+                }
+
+                .question.active .question-text {
+                    display: block;
+                }
+
+                .angle-btn {
+                    display: none;
+                }
+
+                .question.active .plus-btn {
+                    display: none;
+                }
+
+                .question.active .angle-btn {
+                    display: inline-block;
+                }
+
+
+
+            }
+
+        }
+    }
+}
+
+// contacts section
+.contacts-section {
+    margin: 100px auto;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: calc($gap-default * 2);
+
+        span {
+            color: $color-orange;
+        }
+
+        .col {
+            border: 1px solid;
+            border-left: 10px solid transparent;
+            padding: 20px 40px;
+            border-radius: $radius-default;
+
+            h4 {
+                font-size: 20px;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                gap: calc($gap-default * 2);
+            }
+        }
+
+        .location-address,
+        .email-address {
+            border-color: $color-fade-blue;
+        }
+
+        .phone-address {
+            color: $color-orange;
+            border-color: $color-fade-orange;
+        }
+    }
+}
