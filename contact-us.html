@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
+     <!--Header-->
+     <header>
         <div class="topnav">
             <div class="row container">
                 <div class=" contacts">
@@ -38,9 +38,9 @@
                 </div>
             </div>
         </div>
-        <nav>
+        <nav id="nav">
             <div class="row container">
-                <div class="col">
+                <div class="col nav-links">
                     <div class="logo">
                         <a href="/"><img src="/static/images/logo.svg" alt=""></a>
                     </div>
@@ -62,8 +62,11 @@
                         <a href="/join.html" class="faqs"><button class="bnt-white btn-blue">Sign Up</button></a>
                     </div>
 
-                    <div class="mobile-menu-btn">
+                    <div class="nav-btn nav-toggle">
                         <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="nav-btn close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -242,6 +245,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/static/js/main.js"></script>
 </body>
 
 </html>

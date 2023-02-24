@@ -14,7 +14,6 @@ form {
   font-size: 20px;
 }
 .contact .container .row {
-  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 16px;
@@ -26,7 +25,7 @@ form {
   background-color: #01455F;
   color: white;
   padding: 50px;
-  width: 70%;
+  max-width: 70%;
   border-radius: 8px;
 }
 .contact .container .row .col-1 .icon {
@@ -44,8 +43,8 @@ form {
   padding: 10px 10px;
 }
 .contact .container .row .col form textarea {
-  width: 600px;
-  height: 300px;
+  max-width: 600px;
+  max-height: 300px;
   font-size: 16px;
   border: 1px solid rgba(128, 128, 128, 0.434);
   border-radius: 8px;
@@ -72,4 +71,24 @@ form {
 
 .map .container .map-location iframe {
   border-radius: 10px;
+}
+
+@media screen and (max-width: 810px) {
+  .contact .container .row {
+    flex-direction: column;
+  }
+  .contact .container .row .col-1 {
+    max-width: 100%;
+  }
+  .contact .container .row .col form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .contact .container .row .col form input {
+    width: 100%;
+  }
+  .contact .container .row .col form textarea {
+    width: 100%;
+  }
 }/*# sourceMappingURL=contact.css.map */
