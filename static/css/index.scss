@@ -210,7 +210,7 @@ $font-heading: 48;
                 flex-wrap: wrap;
                 gap: calc($gap-default * 2);
                 .col {
-                    width: 48%;
+                    width: 70%;
                     height: 130px;
                     display: flex;
                     align-items: flex-start;
@@ -290,4 +290,22 @@ $font-heading: 48;
     }
 }
 
-// 
+@media screen and (max-width: 540px) {
+    .candidates {
+        .container {
+            .row {
+                flex-wrap: wrap;
+                gap: calc($gap-default * 2);
+                .col {
+                    width: 70%;
+                    height: 130px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: calc($gap-default * 2); 
+
+                }
+            }
+        }
+    }
+}

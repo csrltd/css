@@ -44,11 +44,12 @@
 }
 .unique .container .row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0;
 }
 .unique .container .row .col-text {
   max-width: 30%;
+  height: 100%;
 }
 .unique .container .row .col-text img {
   max-width: 100%;
@@ -64,11 +65,6 @@
   color: white;
 }
 
-.team .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 .team .container span {
   color: #F7941D;
 }
@@ -138,5 +134,49 @@
   .testimonials .container .testimonies {
     flex-direction: column;
     gap: 80px;
+  }
+  .call-to-action {
+    padding: 16px;
+  }
+  .call-to-action .container {
+    padding: 40px;
+  }
+  .call-to-action .row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .call-to-action .row .line {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .unique .container {
+    background: transparent;
+    width: 100%;
+  }
+  .unique .container .row .col-text {
+    width: 100%;
+  }
+  .unique .container .row .col-text img {
+    display: none;
+  }
+  .unique .container .row .col-2 p {
+    color: #01455F;
+  }
+}
+@media screen and (max-width: 430px) {
+  .values .container .row .col {
+    text-align: center;
+  }
+  .values .container .row .col .row {
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  .team .container .row .col img {
+    width: 200px;
+    height: 200px;
   }
 }/*# sourceMappingURL=about.css.map */

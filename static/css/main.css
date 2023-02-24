@@ -211,8 +211,44 @@ header nav .row .col .menu-items, header nav .row .col .cta-buttons {
   align-items: center;
   gap: 24px;
 }
-header nav .row .col .mobile-menu-btn {
+header nav .row .col .nav-btn {
+  font-size: 24px;
   display: none;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+header .fixed-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #F7941D;
+  color: #01455F;
+}
+header .fixed-nav .row .col .logo {
+  display: none;
+}
+header .fixed-nav .row .col .menu-items, header .fixed-nav .row .col .cta-buttons {
+  flex-direction: column;
+  gap: 80px;
+}
+header .fixed-nav .row .col .nav-toggle {
+  display: none;
+}
+header .fixed-nav .row .col .close-btn {
+  display: block;
+  top: 0;
+  right: 0;
+}
+header .fixed-nav .row .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
 }
 
 .testimonials {
@@ -372,11 +408,8 @@ form input[type=submit]:hover {
   header nav .row .col .cta-buttons {
     display: none;
   }
-  header nav .row .col .mobile-menu-btn {
+  header nav .row .col .nav-toggle {
     display: block;
-  }
-  header nav .row .col .mobile-menu-btn i {
-    font-size: 40px;
   }
 }
 footer {
