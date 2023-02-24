@@ -125,6 +125,9 @@ $font-heading: 48;
 .events {
     padding: 50px 0;
     .container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         .oportunities {
             margin-top: 50px;
             display: flex;
@@ -153,6 +156,11 @@ $font-heading: 48;
                 .title {
                     color: $color-blue;
                 }
+
+                a {
+                    color: $color-blue;
+                    text-transform: capitalize;
+                }
             }
 
             .certification {
@@ -160,6 +168,10 @@ $font-heading: 48;
 
                 .title {
                     color: $color-orange;
+                }
+                a {
+                    color: $color-orange;
+                    text-transform: capitalize;
                 }
             }
 

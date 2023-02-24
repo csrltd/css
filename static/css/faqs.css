@@ -1,0 +1,78 @@
+.faqs {
+  margin: 100px auto;
+}
+.faqs .container h1 span {
+  color: #F7941D;
+}
+.faqs .container .questions .question-section .single-question {
+  margin: 50px auto;
+  background-color: #FFFAF4;
+  padding: 25px 50px;
+  border-radius: 10px;
+}
+.faqs .container .questions .question-section .single-question h2 {
+  color: #F7941D;
+}
+.faqs .container .questions .question-section .single-question button {
+  background: transparent;
+}
+.faqs .container .questions .question-section .single-question button .angle-btn {
+  display: none;
+}
+.faqs .container .questions .question-section .single-question h4 {
+  font-size: 20px;
+}
+.faqs .container .questions .question-section .single-question .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faqs .container .questions .question-section .question-text {
+  display: none;
+}
+.faqs .container .questions .question-section .question.active .question-text {
+  display: block;
+}
+.faqs .container .questions .question-section .angle-btn {
+  display: none;
+}
+.faqs .container .questions .question-section .question.active .plus-btn {
+  display: none;
+}
+.faqs .container .questions .question-section .question.active .angle-btn {
+  display: inline-block;
+}
+
+.contacts-section {
+  margin: 100px auto;
+}
+.contacts-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts-section .container span {
+  color: #F7941D;
+}
+.contacts-section .container .col {
+  border: 1px solid;
+  border-left: 10px solid transparent;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.contacts-section .container .col h4 {
+  font-size: 20px;
+}
+.contacts-section .container .col .title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contacts-section .container .location-address,
+.contacts-section .container .email-address {
+  border-color: #CCEFFC;
+}
+.contacts-section .container .phone-address {
+  color: #F7941D;
+  border-color: #FDEAD2;
+}/*# sourceMappingURL=faqs.css.map */

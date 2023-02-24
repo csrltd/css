@@ -22,4 +22,79 @@
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.disciplines {
+  position: relative;
+}
+.disciplines .container {
+  max-width: 100%;
+  background-color: #01455F;
+  max-height: 600px;
+}
+.disciplines .container span {
+  color: #F7941D;
+}
+.disciplines .container .row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+.disciplines .container .row .col-title {
+  width: 40%;
+  color: white;
+  padding: 50px;
+}
+.disciplines .container .row .col-title h1 {
+  width: 50%;
+  padding-bottom: 80px;
+}
+.disciplines .container .row .col-title p {
+  width: 60%;
+  padding-bottom: 16px;
+}
+.disciplines .container .row .col-title .line {
+  border: 1px solid #F7941D;
+  width: 6.5rem;
+}
+.disciplines .container .row .col-img {
+  width: 60%;
+}
+.disciplines .container .row .col-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+}
+
+.row-under {
+  background-color: rgba(255, 255, 255, 0.888);
+  position: absolute;
+  margin-top: -33rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 50%;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-left: 25rem;
+}
+.row-under .col {
+  flex-basis: calc(33.33% - 20px);
+}
+.row-under .col .color-blue {
+  color: #00AEEF;
+}
+.row-under .col .color-orange {
+  color: #F7941D;
+}
+.row-under .col .icon-blue {
+  color: #00AEEF;
+}
+.row-under .col .icon-orange {
+  color: #F7941D;
+}
+.row-under .col .icon {
+  font-size: 2rem;
 }/*# sourceMappingURL=for-emplyers.css.map */

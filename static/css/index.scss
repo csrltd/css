@@ -27,7 +27,7 @@ $font-heading: 48;
         .row {
             .col {
                 padding-top: 150px;
-                width: 40%;
+                width: 50%;
             }
 
             .right-img {
@@ -66,12 +66,17 @@ $font-heading: 48;
     }
 }
 
+// changed the font weight of the first paragraph above the row
 .candidates {
     padding: calc($gap-default * 10) 0;
 
     .container {
         p {
             margin-top: calc($gap-default * 2);
+        }
+
+        .heading-paragraph {
+            font-weight: bold;
         }
 
         .row {
@@ -104,19 +109,58 @@ $font-heading: 48;
     }
 }
 
+// added a new section(our partner institution)
+.our-partners-institutions {
+    background-color: $color-fade-organge-50;
+    padding: calc($gap-default * 10) 0;
 
-.call-to-action {
     .container {
-        background-color: $color-dark;
-        padding: calc($gap-default * 10);
-        margin-bottom: calc($gap-default * 10);
-        color: white;
-        border-radius: $radius-default;
+        span {
+            color: $color-orange;
+        }
+        .row {
+            padding: 12px 0;
+            .col {
+                background-color: white;
+                border-radius: $radius-default;
+                max-width: 364px;
+                gap: calc($gap-default * 3);
+                
+                h2 {
+                    font-size: 18px;
+                    padding: 12px;
+                }
+                
+                img {
+                    border-top-right-radius: $radius-default;
+                    border-top-left-radius: $radius-default;
+                    max-width: 364px;
+                    object-fit: cover;
+                }
 
-        .title {
-            h3 {
-                font-size: 24px;
-                font-weight: bold;
+                .address {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $gap-default;
+                    padding: 12px;
+
+                    .icon {
+                        color: $color-orange;
+                    }
+
+                    .location {
+                        display: flex;
+                        align-items: center;
+                        gap: $gap-default;
+                    }
+
+                    .phone {
+                        display: flex;
+                        align-items: center;
+                        gap: $gap-default;
+                    }
+
+                }
             }
         }
     }
@@ -229,7 +273,21 @@ $font-heading: 48;
         .row {
             flex-direction: column;
             gap: calc($gap-default * 3);
+            .line {
+                display: none;
+            }
+        }
+    }
+
+    .our-partners-institutions {
+        .container {
+            .row {
+                display: flex;
+                flex-direction: column;
+                gap: calc($gap-default * 3);
+            }
         }
     }
 }
 
+// 
