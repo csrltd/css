@@ -9,64 +9,68 @@
     <link rel="stylesheet" href="/static/css/for-employees.css">
     <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <title>For Employees | Cohesive Staffing Solutions</title>
+    <title>Employees | Cohesive Staffing Solutions</title>
 </head>
 
 <body>
-    <!--Header-->
-    <header>
-        <div class="topnav">
-            <div class="row container">
-                <div class=" contacts">
-                    <a class="top-bar-location" href=""><i class="fas fa-map-marker-alt"></i>
-                        <p>816 E. Federal Shawnee, OK 74804</p>
-                    </a>
-                    <a class="top-bar-email" href="mailto:info@cohesivestaffing.com"><i class="fa fa-envelope"></i>
-                        <p>info@cohesivestaffing.com</p>
-                    </a>
-                    <a class="top-bar-phone-number" href="tel:405.367.4422"><i class="fas fa-phone-alt"></i>
-                        <p>405.367.4422</p>
-                    </a>
+   <!--Header-->
+   <header>
+    <div class="topnav">
+        <div class="row container">
+            <div class=" contacts">
+                <a class="top-bar-location" href=""><i class="fas fa-map-marker-alt"></i>
+                    <p>816 E. Federal Shawnee, OK 74804</p>
+                </a>
+                <a class="top-bar-email" href="mailto:info@cohesivestaffing.com"><i class="fa fa-envelope"></i>
+                    <p>info@cohesivestaffing.com</p>
+                </a>
+                <a class="top-bar-phone-number" href="tel:405.367.4422"><i class="fas fa-phone-alt"></i>
+                    <p>405.367.4422</p>
+                </a>
+            </div>
+
+            <div class=" social-icons">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav id="nav">
+        <div class="row container">
+            <div class="col nav-links">
+                <div class="logo">
+                    <a href="/"><img src="/static/images/logo.svg" alt=""></a>
                 </div>
 
-                <div class=" social-icons">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="/index.html">Home</a></li>
+                    <li class="menu-item"><a href="/about.html">About Us</a></li>
+                    <li class="menu-item"><a href="/for-employee.html">For Employees</a></li>
+                    <li class="menu-item"><a href="/for-employers.html">For Employers</a></li>
+                    <li class="menu-item"><a href="/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- changed the button colors here -->
+            <div class="col col-btns">
+                <div class="cta-buttons">
+                    <a href="/faqs.html" class="faqs">FAQs</a>
+                    <a href="/login.html" class="faqs"><button class="bnt-white btn-outline">Login</button></a>
+                    <a href="/join.html" class="faqs"><button class="bnt-white btn-blue">Sign Up</button></a>
+                </div>
+
+                <div class="nav-btn nav-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="nav-btn close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-        <nav>
-            <div class="row container">
-                <div class="col">
-                    <div class="logo">
-                        <a href="/"><img src="/static/images/logo.svg" alt=""></a>
-                    </div>
-
-                    <ul class="menu-items">
-                        <li class="menu-item"><a href="/index.html">Home</a></li>
-                        <li class="menu-item"><a href="/about.html">About Us</a></li>
-                        <li class="menu-item"><a href="/for-employee.html">For Employees</a></li>
-                        <li class="menu-item"><a href="/for-employers.html">For Employers</a></li>
-                        <li class="menu-item"><a href="/contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col col-btns">
-                    <div class="cta-buttons">
-                        <a href="/faqs.html" class="faqs">FAQs</a>
-                        <a href="/login.html" class="faqs"><button class="bnt-white btn-outline">Login</button></a>
-                        <a href="/join.html" class="faqs"><button class="bnt-white btn-blue">Sign Up</button></a>
-                    </div>
-
-                    <div class="mobile-menu-btn">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    </nav>
+</header>
 
     <!--Page header-->
     <section class="page-header">
@@ -81,6 +85,8 @@
 
     <section class="offer">
         <div class="container">
+            <h1 class="heading">Discover the hiring & events opportunities
+                Visit the job <span>openings</span>.</h1>
             <div class="row">
                 <div class="col temprary">
                     <h2 class="title">Temporary Offer</h2>
@@ -108,7 +114,7 @@
         </div>
     </section>
 
-    <div class="job-brief process">
+    <section class="job-brief process">
         <div class="container">
             <div class="row">
                 <div class="col job">
@@ -192,7 +198,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="benefits-section">
         <div class="container">
@@ -249,8 +255,8 @@
                 Creating a Culture of Growth: Professional Development Opportunities
             </p>
 
-            <div class="oportunities">
-                <div class="opportunity training">
+            <div class="row">
+                <div class="col training">
                     <div class="title">
                         <img src="/static/images/🦆 icon _Chalkboard Teacher_.svg" alt="">
                         <h2>Training</h2>
@@ -266,7 +272,7 @@
                     </a>
                 </div>
 
-                <div class="opportunity certification">
+                <div class="col certification">
                     <div class="title">
                         <img src="/static/images/🦆 icon _Poll H_.png" alt="">
                         <h2>Certification</h2>
@@ -282,7 +288,7 @@
                     </a>
                 </div>
 
-                <div class="opportunity programs">
+                <div class="col programs">
                     <div class="title">
                         <img src="/static/images/🦆 icon _Book Reader_.png" alt="">
                         <h2>Training</h2>
@@ -435,6 +441,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/static/js/main.js"></script>
 </body>
 
 </html>

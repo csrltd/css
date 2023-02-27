@@ -20,8 +20,17 @@ $font-heading: 48;
 .offer {
     padding: 100px 0 50px 0;
     .container {
+        h1 {
+            font-size: 25px;
+            padding-bottom: 3rem;
+        }
+        span {
+            color: $color-orange;
+        }
         .row {
+            align-items: stretch;
             .col {
+                flex: 1;
                 border:1px solid;
                 border-bottom: 10px solid transparent;
                 padding: 50px;
@@ -59,10 +68,10 @@ $font-heading: 48;
                         align-items: center;
                         gap: 12px;
 
-                        i {
-                            color: $color-orange;
-                            font-size: 24px;
-                        }
+                        // i {
+                        //     color: $color-orange;
+                        //     font-size: 24px;
+                        // }
                     }
                 }
             }
@@ -128,13 +137,12 @@ $font-heading: 48;
         display: flex;
         flex-direction: column;
         gap: 24px;
-        .oportunities {
+        .row {
             margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
+            align-items: stretch;
             gap: 45px;
 
-            .opportunity {
+            .col {
                 padding: 32px;
                 border-radius: $radius-default;
                 display: flex;
@@ -227,3 +235,116 @@ $font-heading: 48;
         }
     }
 }
+
+// MOBILE VIEW
+@media screen and (max-width: 768px) {
+    // job briefsection
+    .job-brief {
+        .container {
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .process-col {
+                    .process-cards {
+                        .card {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // resources for employee section
+    .resources-for-employee {
+        .container {
+            .resources {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 829px) {
+    .offer {
+        .container {
+            .row {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .benefits-section {
+        .container {
+            .row {
+                flex-direction: column-reverse;
+
+                .col {
+                    width: 100%;
+                }
+
+                .col-benefits {
+                    .benefits {
+                        display: grid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    // benefits section
+    .benefits-section {
+        .container {
+            .row {
+                .col-benefits {
+                    .benefits {
+                        grid-template-columns: 60% 60%;
+                    }
+                }
+            }
+        }
+    }
+
+    // events section
+    .events {
+        .container {
+            .row {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    // benefits section
+    .benefits-section {
+        .container {
+            .row {
+                .col-benefits {
+                    
+                    .benefits {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        .benefit {
+                            text-align: center;
+                            padding: 15px auto;
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
