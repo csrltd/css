@@ -617,6 +617,22 @@ footer {
     
         }
     }
+
+    .call-to-action {
+        padding: calc($gap-default *2 );
+
+        .container {
+            padding: calc($gap-default * 5);
+        }
+
+        .row {
+            flex-direction: column;
+            gap: calc($gap-default * 3);
+            .line {
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -650,3 +666,30 @@ footer {
     }
 }
 
+// PROCESS SECTION RESPONSIVE 
+@media screen and (max-width: 848px) {
+    .process {
+        .container {
+            .row {
+                flex-direction: column-reverse;
+                .process-col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // TESTIMONIALS
+    .testimonials {
+        .container {
+            .row {
+                display: flex;
+                flex-direction: column;
+                
+                .col {
+                    margin: 12px auto;
+                }
+            }
+        }
+    }
+}

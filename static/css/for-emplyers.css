@@ -66,7 +66,7 @@
   height: 600px;
 }
 
-.row-under {
+.row-under .container {
   background-color: rgba(255, 255, 255, 0.888);
   position: absolute;
   margin-top: -33rem;
@@ -75,26 +75,87 @@
   gap: 24px;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 50%;
+  width: 50%;
   border-radius: 10px;
   padding: 20px 20px;
   margin-left: 25rem;
 }
-.row-under .col {
+.row-under .container .col {
   flex-basis: calc(33.33% - 20px);
 }
-.row-under .col .color-blue {
+.row-under .container .col .color-blue {
   color: #00AEEF;
 }
-.row-under .col .color-orange {
+.row-under .container .col .color-orange {
   color: #F7941D;
 }
-.row-under .col .icon-blue {
+.row-under .container .col .icon-blue {
   color: #00AEEF;
 }
-.row-under .col .icon-orange {
+.row-under .container .col .icon-orange {
   color: #F7941D;
 }
-.row-under .col .icon {
+.row-under .container .col .icon {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .service-section .container .row {
+    flex-direction: column;
+  }
+  .service-section .container .row .col {
+    width: 100%;
+  }
+  .service-section .container .row .col .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .service-section .container .row .col .row {
+    width: 100%;
+  }
+  .service-section .container .row .col .row .service {
+    width: 20rem;
+  }
+  .row-under .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .disciplines .container {
+    background: transparent;
+    height: 100px;
+  }
+  .disciplines .container .row {
+    width: 100%;
+  }
+  .disciplines .container .row .col-img {
+    display: none;
+  }
+  .disciplines .container .row .col-title {
+    color: #01455F;
+    width: 100%;
+  }
+  .disciplines .container .row .col-title h1 {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .disciplines .container .row .col-title p {
+    width: 100%;
+  }
+  .row-under {
+    background-color: #FFFAF4;
+    width: 100%;
+  }
+  .row-under .container {
+    margin-top: 15rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    position: relative;
+    background-color: #FFFAF4;
+    width: 100%;
+  }
 }/*# sourceMappingURL=for-emplyers.css.map */
