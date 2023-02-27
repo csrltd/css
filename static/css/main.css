@@ -226,13 +226,13 @@ header .fixed-nav {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: #F7941D;
+  background-color: rgba(247, 149, 29, 0.9764705882);
   color: #01455F;
 }
 header .fixed-nav .row .col .logo {
   display: none;
 }
-header .fixed-nav .row .col .menu-items, header .fixed-nav .row .col .cta-buttons {
+header .fixed-nav .row .col .menu-items {
   flex-direction: column;
   gap: 80px;
 }
@@ -249,6 +249,10 @@ header .fixed-nav .row .nav-links {
   justify-content: center;
   align-items: center;
   padding-top: 20rem;
+  margin: 20px auto;
+}
+header .fixed-nav .row .nav-links .menu-items .menu-item {
+  padding-bottom: 24px;
 }
 
 .testimonials {
@@ -380,15 +384,15 @@ form input[type=submit]:hover {
   font-weight: light;
 }
 .call-to-action .container a button {
-  background-color: #01455F;
+  background-color: white;
   border: transparent;
-  color: #00AEEF;
+  color: #01455F;
   width: 10rem;
 }
 .call-to-action .container a button:hover {
   background: transparent;
-  color: #01455F;
-  border: 1px solid #01455F;
+  color: white;
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 1100px) {
