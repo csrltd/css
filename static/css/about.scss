@@ -116,8 +116,8 @@ $font-heading: 48;
                 padding: 12px;
                 transition: linear 0.2s;
                 img {
-                    width: 300px;
-                    height: 300px;
+                    max-width: 300px;
+                    max-height: 300px;
                     object-fit: cover;
                 }
     
@@ -226,50 +226,61 @@ $font-heading: 48;
             }
         }
     }
-}
 
-@media screen and (max-width: 1300px) {
+    // unique 
     .unique {
         .container {
-            background: transparent;
-            width: 100%;
-            
-           .row {
-            
-            .col-text {
-                width: 100%;
-                img {
-                    display: none;
+            .row {
+                .col-2 {
+                    padding: 0;
                 }
             }
-
-            .col-2 {
-                p {
-                    color: $color-dark;
-                }
-            }
-           }
         }
     }
 }
 
+// @media screen and (max-width: 1300px) {
+//     .unique {
+//         .container {
+//             background: transparent;
+//             width: 100%;
+            
+//            .row {
+            
+//             .col-text {
+//                 width: 100%;
+//                 img {
+//                     display: none;
+//                 }
+//             }
+
+//             .col-2 {
+//                 p {
+//                     color: $color-dark;
+//                 }
+//             }
+//            }
+//         }
+//     }
+// }
+
 // values 
-@media screen and (max-width: 430px) {
-     .values {
-        .container {
-            .row {
-                .col {
-                    text-align: center;
-                    .row {
-                        display: grid;
-                        place-items: center;
-                        align-content: center;
-                    }
-                }
-            }
-        }
-     }
-}
+// @media screen and (max-width: 430px) {
+//      .values {
+//         .container {
+//             .row {
+//                 .col {
+//                     text-align: center;
+//                     .row {
+//                         display: grid;
+//                         place-items: center;
+//                         align-content: center;
+//                     }
+//                 }
+//             }
+//         }
+//      }
+// }
 
 @media screen and (max-width: 540px) {
     .team {
@@ -284,4 +295,36 @@ $font-heading: 48;
             }
         }
     }
+
+    .unique {
+        .container {
+            .row {
+                .col-2 {
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
+
+@media screen and (max-width: 1024px) {
+    .unique {
+        .container {
+            background: transparent;
+            
+            .row {
+                .col-text {
+                    display: none;
+                }
+    
+                .col-2 {
+                    width: 100%;
+                    p {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
