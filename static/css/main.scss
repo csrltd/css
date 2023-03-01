@@ -192,7 +192,7 @@ img {
     }
 }
 
-//Pagre header
+//Page header
 
 .page-header {
     height: 400px;
@@ -251,12 +251,63 @@ header {
                     align-items: center;
                     gap: calc($gap-default * 3);
                 }
-                .mobile-menu-btn {
+                .nav-btn {
+                    font-size: 24px;
                     display: none;
+                    cursor: pointer;
+                    transition: linear 0.2s;
                 }
             }
         }
     }
+
+    .fixed-nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: #f7951df9;
+        color: $color-dark;
+
+        .row {
+            .col {
+                
+                .logo {
+                    display: none;
+                }
+               
+                .menu-items {
+                    flex-direction: column;
+                    gap: calc($gap-default * 10);
+                }
+                .nav-toggle {
+                    display: none;
+                }
+                .close-btn {
+                    display: block;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .nav-links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20rem;
+                margin: 20px auto;
+
+                .menu-items {
+                    .menu-item {
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    } 
 }
 
 
@@ -419,16 +470,16 @@ form {
         }
         a {
             button {
-                background-color: $color-dark;
+                background-color: white;
                 border: transparent;
-                color: $color-blue;
-                width: 10rem;
-            }
-
-            button:hover {
-                background: transparent;
                 color: $color-dark;
-                border: 1px solid $color-dark;
+                width: 10rem;
+
+                &:hover {
+                    background: transparent;
+                    color: white;
+                    border: 1px solid white;
+                }
             }
         }
     }
@@ -466,7 +517,7 @@ header {
 }    
 }
 
-//Nav bard respinsiveness
+//Nav bar respinsiveness
 //Mobile 540px
 @media screen and (max-width: 1000px) {
     header {
@@ -481,12 +532,9 @@ header {
                         display: none;
                     }
 
-                    .mobile-menu-btn {
+                    .nav-toggle {
                         display: block;
-                        i {
-                            font-size: calc($gap-default* 5);
-                        }
-                    }
+                    }   
                 } 
             }
         }
@@ -573,6 +621,22 @@ footer {
     
         }
     }
+
+    .call-to-action {
+        padding: calc($gap-default *2 );
+
+        .container {
+            padding: calc($gap-default * 5);
+        }
+
+        .row {
+            flex-direction: column;
+            gap: calc($gap-default * 3);
+            .line {
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -603,5 +667,33 @@ footer {
     }
     .fade-blue-reverse {
         background-color: $color-fade-orange;
+    }
+}
+
+// PROCESS SECTION RESPONSIVE 
+@media screen and (max-width: 848px) {
+    .process {
+        .container {
+            .row {
+                flex-direction: column-reverse;
+                .process-col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // TESTIMONIALS
+    .testimonials {
+        .container {
+            .row {
+                display: flex;
+                flex-direction: column;
+                
+                .col {
+                    margin: 12px auto;
+                }
+            }
+        }
     }
 }

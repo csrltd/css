@@ -76,11 +76,12 @@ $font-heading: 48;
         
         .row {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             gap: 0;
 
             .col-text {
                 max-width: 30%;
+                height: 100%;
                 img {
                     max-width: 100%;
                     max-height: 500px;
@@ -105,9 +106,7 @@ $font-heading: 48;
 .team {
     
     .container {
-        display: flex;
-        flex-direction: column;
-        gap: calc($gap-default * 2);
+        
         span {
             color: $color-orange;
         }
@@ -117,8 +116,8 @@ $font-heading: 48;
                 padding: 12px;
                 transition: linear 0.2s;
                 img {
-                    width: 300px;
-                    height: 300px;
+                    max-width: 300px;
+                    max-height: 300px;
                     object-fit: cover;
                 }
     
@@ -176,7 +175,6 @@ $font-heading: 48;
     }
 
     //Values section
-
     .values {
         .container {
             .row {
@@ -211,4 +209,79 @@ $font-heading: 48;
             }
         }
     }
+
+    //call to action
+    .call-to-action {
+        padding: calc($gap-default *2 );
+
+        .container {
+            padding: calc($gap-default * 5);
+        }
+
+        .row {
+            flex-direction: column;
+            gap: calc($gap-default * 3);
+            .line {
+                display: none;
+            }
+        }
+    }
+
+    // unique 
+    .unique {
+        .container {
+            .row {
+                .col-2 {
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
+
+@media screen and (max-width: 540px) {
+    .team {
+        .container {
+            .row {
+                .col {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .unique {
+        .container {
+            .row {
+                .col-2 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .unique {
+        .container {
+            background: transparent;
+            
+            .row {
+                .col-text {
+                    display: none;
+                }
+    
+                .col-2 {
+                    width: 100%;
+                    p {
+                        color: $color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+

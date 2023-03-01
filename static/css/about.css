@@ -44,11 +44,12 @@
 }
 .unique .container .row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0;
 }
 .unique .container .row .col-text {
   max-width: 30%;
+  height: 100%;
 }
 .unique .container .row .col-text img {
   max-width: 100%;
@@ -64,11 +65,6 @@
   color: white;
 }
 
-.team .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 .team .container span {
   color: #F7941D;
 }
@@ -80,8 +76,8 @@
   transition: linear 0.2s;
 }
 .team .container .row .col img {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -138,5 +134,44 @@
   .testimonials .container .testimonies {
     flex-direction: column;
     gap: 80px;
+  }
+  .call-to-action {
+    padding: 16px;
+  }
+  .call-to-action .container {
+    padding: 40px;
+  }
+  .call-to-action .row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .call-to-action .row .line {
+    display: none;
+  }
+  .unique .container .row .col-2 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .team .container .row .col img {
+    width: 200px;
+    height: 200px;
+  }
+  .unique .container .row .col-2 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .unique .container {
+    background: transparent;
+  }
+  .unique .container .row .col-text {
+    display: none;
+  }
+  .unique .container .row .col-2 {
+    width: 100%;
+  }
+  .unique .container .row .col-2 p {
+    color: #01455F;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -24,8 +24,6 @@ $font-heading: 48;
         .row {
             .col {
                 width: 50%;
-            }
-            .col {
                 .row {
                     display: flex;
                     flex-wrap: wrap;
@@ -102,44 +100,139 @@ $font-heading: 48;
 
 // under row section 
 .row-under {
-    background-color: rgba(255, 255, 255, 0.888);
-    position: absolute;
-    margin-top: -33rem;
-    display: flex;
-    justify-content: flex-start;
-    gap: calc($gap-default * 3);
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 50%;
-    border-radius: $radius-default;
-    padding: 20px 20px;
-    margin-left: 25rem;
-
-    .col {
-        flex-basis: calc(calc(33.33% - 20px));
-
-        
-        .color-blue {
-            color: $color-blue;
-        }
-
-        .color-orange {
-            color: $color-orange;
-        }
-
-        // icon colors 
-        .icon-blue {
-            color: $color-blue;
-        }
-        .icon-orange {
-            color: $color-orange;
-        }
-
-        .icon {
-            font-size: 2rem;
+    .container {
+        background-color: rgba(255, 255, 255, 0.888);
+        position: absolute;
+        margin-top: -33rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: calc($gap-default * 3);
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        border-radius: $radius-default;
+        padding: 20px 20px;
+        margin-left: 25rem;
+    
+        .col {
+            flex-basis: calc(calc(33.33% - 20px));
+    
+            
+            .color-blue {
+                color: $color-blue;
+            }
+    
+            .color-orange {
+                color: $color-orange;
+            }
+    
+            // icon colors 
+            .icon-blue {
+                color: $color-blue;
+            }
+            .icon-orange {
+                color: $color-orange;
+            }
+    
+            .icon {
+                font-size: 2rem;
+            }
         }
     }
 } 
+
+
+// RESPONSIVENESS
+
+@media screen and (max-width: 768px) {
+    .service-section {
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    width: 100%;
+
+                    .row {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    // service section
+    .service-section {
+        .container {
+            .row {
+                .col {
+                    .row {
+                        width: 100%;
+                        .service {
+                            width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // row-under section
+    .row-under {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .disciplines {
+        .container {
+            background: transparent;
+            height: 100px;
+            .row {
+                width: 100%;
+
+                .col-img {
+                    display: none;
+                }
+
+                .col-title {
+                    color: $color-dark;
+                    width: 100%;
+
+                    h1 {
+                        width: 100%;
+                        padding-bottom: 0;
+                    }
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .row-under {
+        background-color: $color-fade-organge-50;
+        width: 100%;
+        .container {
+            margin-top: 15rem;
+            margin-left: 2rem;
+            margin-right: 5rem;
+            position: relative;
+            background-color: $color-fade-organge-50;
+            width: 100%;
+        }
+    }
+}
+
 
 
 

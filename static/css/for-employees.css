@@ -1,7 +1,18 @@
 .offer {
   padding: 100px 0 50px 0;
 }
+.offer .container h1 {
+  font-size: 25px;
+  padding-bottom: 3rem;
+}
+.offer .container span {
+  color: #F7941D;
+}
+.offer .container .row {
+  align-items: stretch;
+}
 .offer .container .row .col {
+  flex: 1;
   border: 1px solid;
   border-bottom: 10px solid transparent;
   padding: 50px;
@@ -33,10 +44,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-}
-.job-brief .container .row .job .certificates .certificate i {
-  color: #F7941D;
-  font-size: 24px;
 }
 
 .benefits-section {
@@ -88,45 +95,44 @@
   flex-direction: column;
   gap: 24px;
 }
-.events .container .oportunities {
+.events .container .row {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+  align-items: stretch;
   gap: 45px;
 }
-.events .container .oportunities .opportunity {
+.events .container .row .col {
   padding: 32px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.events .container .oportunities .opportunity .title {
+.events .container .row .col .title {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.events .container .oportunities .opportunity .title img {
+.events .container .row .col .title img {
   width: 40px;
   height: 40px;
 }
-.events .container .oportunities .training, .events .container .oportunities .programs {
+.events .container .row .training, .events .container .row .programs {
   background-color: #CCEFFC;
 }
-.events .container .oportunities .training .title, .events .container .oportunities .programs .title {
+.events .container .row .training .title, .events .container .row .programs .title {
   color: #00AEEF;
 }
-.events .container .oportunities .training a, .events .container .oportunities .programs a {
+.events .container .row .training a, .events .container .row .programs a {
   color: #00AEEF;
   text-transform: capitalize;
 }
-.events .container .oportunities .certification {
+.events .container .row .certification {
   background-color: #FDEAD2;
 }
-.events .container .oportunities .certification .title {
+.events .container .row .certification .title {
   color: #F7941D;
 }
-.events .container .oportunities .certification a {
+.events .container .row .certification a {
   color: #F7941D;
   text-transform: capitalize;
 }
@@ -176,4 +182,53 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .job-brief .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .job-brief .container .row .process-col .process-cards .card {
+    width: 100%;
+  }
+  .resources-for-employee .container .resources {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 829px) {
+  .offer .container .row {
+    flex-direction: column;
+  }
+  .benefits-section .container .row {
+    flex-direction: column-reverse;
+  }
+  .benefits-section .container .row .col {
+    width: 100%;
+  }
+  .benefits-section .container .row .col-benefits .benefits {
+    display: grid;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .benefits-section .container .row .col-benefits .benefits {
+    grid-template-columns: 60% 60%;
+  }
+  .events .container .row {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 540px) {
+  .benefits-section .container .row .col-benefits .benefits {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .benefits-section .container .row .col-benefits .benefits .benefit {
+    text-align: center;
+    padding: 15px auto;
+  }
+  .benefits-section .container .row .col-benefits .benefits .benefit p {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=for-employees.css.map */
